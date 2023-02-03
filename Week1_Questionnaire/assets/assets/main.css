@@ -1,0 +1,35 @@
+a {
+  color: black;
+  font-size: 20px
+}
+
+
+body {
+  background-image: url("https://media.idownloadblog.com/wp-content/uploads/2016/02/Firewatch-Wallpaper-desktop-2560x1440-green.jpg");
+  background-position: center;
+  background-size:cover;
+
+  font-family: 'Montserrat', sans-serif;
+  padding: 3px;
+  line-height: 1.2;
+  font-size: 38px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+p {
+  color:darkgreen;
+  font-size: 20px;
+  text-align: left;
+  margin: 0;
+  padding: 10px;
+}
+
+li {
+  color:black;
+  font-size: 20px;
+  text-align: left;
+  margin: 0;
+  padding: 10px;
+}
+
