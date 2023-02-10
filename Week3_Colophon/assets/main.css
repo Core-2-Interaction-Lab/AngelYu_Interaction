@@ -13,29 +13,42 @@ html {
     font-family: 'BIOS';
     background-color: black;
     color: white;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 body {
-    margin: 0;
+    margin: 0.5%;
 }
 
 h1 {
-    margin: 50px 20px;
-    font-size: 400%;
+    margin:0px;
+    font-size: 300%;
+    line-height: 250%;
     color: white;
 
-    line-height: 100px;
     text-align: center;
+
+    border-bottom: 5px dashed white;
   }
 
 article {
     padding: 0px;
     margin: 0px;
+
+    border-top: 5px dashed white;
+    border-bottom: 5px dashed white;
+  }
+
+  article:nth-of-type(2) {
+    border-left: 5px dashed white;
+  }
+
+  article:nth-of-type(3) div:first-child {
+    border-bottom: 5px dashed white;
   }
 
 p {
-    margin: 30px 40px;
+    margin: 20px 30px;
     max-width: 90%;
     line-height: 200%;
 
@@ -47,8 +60,9 @@ a {
 }
 
 .space {
-    margin: 400px 100px;
-    font-size: 600%;
+    margin: 200px 10px;
+    text-align: center;
+    font-size: 400%;
 }
 
   /* Flex */
