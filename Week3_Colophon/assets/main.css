@@ -3,8 +3,8 @@
 
 @font-face {
     font-family: 'BIOS';
-    src: url('fonts/Web437_IBM_BIOS.woff') format('woff'),
-    url('fonts/Ac437_IBM_BIOS.ttf') format('ttf')
+    src: url('../../assets/fonts/Web437_IBM_BIOS.woff') format('woff'),
+    url('../../assets/fonts/Ac437_IBM_BIOS.ttf') format('ttf')
 }
 
 /* Page */
