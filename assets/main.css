@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: 'BIOS';
-    src: url('fonts/Web437_IBM_BIOS.woff') format('woff'),
+    src: url('fonts/Web437_IBM_BIOS.woff') format('woff');
 }
 
 /* Page */
@@ -25,11 +25,12 @@ section {
     margin: 30px;
 }
 
-article {
-    font-family: 'BIOS';    
+article {  
     border-top: 10px dashed white;
     flex-direction: column;
 }
+
+/* Text */
 
 a {
     font-family: 'BIOS';
@@ -44,6 +45,8 @@ pre {
     font-size: 10px;
     text-align: center;
 }
+
+/* Hover */
 
 a:hover {
     background: linear-gradient(270deg, red, yellow, #6bf51d, deepskyblue, magenta);
