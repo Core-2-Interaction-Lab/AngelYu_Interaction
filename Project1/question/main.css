@@ -1,0 +1,17 @@
+
+/* Font */
+
+@font-face {
+    font-family: 'BIOS';
+    src: url('../../assets/fonts/Web437_IBM_BIOS.woff') format('woff'),
+    url('../../assets/fonts/Ac437_IBM_BIOS.ttf') format('ttf');
+}
+
+/* Page */
+
+html {
+    font-family: 'BIOS';
+    background-color: black;
+    color: white;
+    font-size: 17px;
+}
