@@ -1,4 +1,4 @@
-function typeWriter(inputString, delay = 30) {
+function typeWriter(inputString, delay = 50) {
 	// split the string into an array of chars
   const letters = inputString.split('');
   
@@ -27,10 +27,10 @@ function typeWriter(inputString, delay = 30) {
     blockElement.append(span);
   }
   
-  // apppend the <p> to the target element
+  // append the <p> to the target element
   scrollbox.append(blockElement);
   
-  // Create a new promise that accepts when all the letters have been shown
+  // Create a new promise that accepts when all the letters have been shown; coordinating asynchronous code
   return new Promise(accept => setTimeout(accept, delay * length));
 }
 
