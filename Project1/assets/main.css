@@ -13,6 +13,7 @@ html {
     background-color: black;
     color: white;
     font-size: 17px;
+    margin: 2%;
 }
 
 body {
@@ -20,14 +21,39 @@ body {
 }
 
 section {
-    display: flex;
-    flex-direction: column;
   }
 
   article {
-    flex: 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    
   }
 
   article:nth-of-type(2) {
-    flex-direction: row;
   }
+
+  
+p {
+  text-align: center;
+}
+
+.mid {
+  margin: 37% 1% 0%;
+}
+
+.hidden {
+  display: none;
+}
+
+.knob {
+  position: absolute;
+  margin: 10%;
+  font-size: 700%;
+}
+
+#chat {
+  margin: 2%;
+  overflow-y: scroll
+}

@@ -38,3 +38,4 @@ typeWriter('The quick brown fox jumps over the lazy dog')
 .then(() => typeWriter("Notice how it doesn't screw up when its typing a word thats close to the end of a line?"))
 .then(() => typeWriter("Thats because all the words are present, I'm just unhiding each letter with a delay."))
 .then(() => typeWriter("I can explain the concept of a Promise object and how I use it to line up the timings."));
+
