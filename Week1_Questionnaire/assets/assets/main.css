@@ -1,0 +1,86 @@
+a {
+  color: black;
+  font-size: 20px
+}
+
+body {
+  background-image: url("https://media.idownloadblog.com/wp-content/uploads/2016/02/Firewatch-Wallpaper-desktop-2560x1440-green.jpg");
+  background-position: center;
+  background-size:cover;
+
+  font-family: 'Montserrat', sans-serif;
+  padding: 3px;
+  line-height: 1.2;
+  font-size: 38px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+p {
+  color:darkgreen;
+  font-size: 20px;
+  text-align: left;
+  margin: 0;
+  padding: 10px;
+}
+
+li {
+  color:black;
+  font-size: 20px;
+  text-align: left;
+  margin: 0;
+  padding: 10px;
+}
+
+pre {
+color: white;
+font-size: 20px;
+}
+
+/*Musical Genre*/
+
+.edm {
+  background: linear-gradient(270deg, #ff00f5, #ffd736, #f2a4ff, #6bf51d, #06e854);
+  background-size: 1000% 1000%;
+
+  padding: 10px;
+  margin: 5px;
+
+  -webkit-animation: slideBackground 2s ease infinite;
+  -moz-animation: slideBackground 2s ease infinite;
+  animation: slideBackground 2s ease infinite;
+}
+
+.rock {
+  background-clip: text;
+  background: -webkit-linear-gradient(orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.8s ease;
+}
+
+.rap{
+  font-size: 30px;
+  font-weight: 400;
+
+  background-color: skyblue;
+  border-radius: 30%;
+  color: white;
+  margin: 10px;
+}
+
+    @-webkit-keyframes slideBackground {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes slideBackground {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes slideBackground {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }

@@ -1,0 +1,79 @@
+
+/* Font */
+
+@font-face {
+    font-family: 'BIOS';
+    src: url('fonts/Web437_IBM_BIOS.woff') format('woff');
+}
+
+/* Page */
+
+html {
+    font-family: 'BIOS';
+    background-color: black;
+    color: white;
+    font-size: 50px;
+}
+
+body {
+    margin: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+article {  
+    border-top: 10px dashed white;
+    flex-direction: column;
+}
+
+/* Text */
+
+a {
+    font-family: 'BIOS';
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    line-height: 170%;
+    border-bottom: 10px dashed white;
+}
+
+pre {
+    font-size: 10px;
+    text-align: center;
+}
+
+/* Hover */
+
+a:hover {
+    background: linear-gradient(270deg, red, yellow, #6bf51d, deepskyblue, magenta);
+    background-size: 1000% 1000%;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-animation: slideBackground 2s ease infinite;
+    -moz-animation: slideBackground 2s ease infinite;
+    animation: slideBackground 2s ease infinite;
+}
+
+/* Webkits */
+
+@-webkit-keyframes slideBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes slideBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes slideBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

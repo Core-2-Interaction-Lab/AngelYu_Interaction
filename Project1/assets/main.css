@@ -1,0 +1,33 @@
+/* Font */
+
+@font-face {
+    font-family: 'BIOS';
+    src: url('../../assets/fonts/Web437_IBM_BIOS.woff') format('woff'),
+    url('../../assets/fonts/Ac437_IBM_BIOS.ttf') format('ttf');
+}
+
+/* Page */
+
+html {
+    font-family: 'BIOS';
+    background-color: black;
+    color: white;
+    font-size: 17px;
+}
+
+body {
+    margin: 0.5%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  article {
+    flex: 0;
+  }
+
+  article:nth-of-type(2) {
+    flex-direction: row;
+  }
