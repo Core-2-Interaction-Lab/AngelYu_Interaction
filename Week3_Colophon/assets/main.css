@@ -96,6 +96,24 @@ a:hover {
     animation: slideBackground 2s ease infinite;
 }
 
+#typewriter-box {
+  font-family: 'BIOS';
+  color: white;
+  background-color: black;
+  width: 100%;
+  margin:0;
+}
+
+.typewriter-letter {
+  animation: fadeIn 30ms calc(calc(1ms * var(--delay)) * var(--pos)) ease-in forwards;
+  opacity:0.01;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0.1; }
+  100% { opacity: 1; }
+}
+
 /* ?!.:' */
 
 .space {
