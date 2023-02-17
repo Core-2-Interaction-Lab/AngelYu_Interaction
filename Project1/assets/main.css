@@ -17,17 +17,16 @@ html {
 }
 
 body {
-    margin: 0.5%;
+  margin: 0.5%;
 }
 
-  article {
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    
-  }
-
+article {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  
+}
   
 p {
   text-align: center;
@@ -35,16 +34,19 @@ p {
 }
 
 #door {
-color: red;
+  color: red;
 }
 
+#door, #door2 {
+  opacity: 0%;
+}
 
 .mid {
   margin: 37% 1% 0%;
 }
 
-.hidden {
-  display: none;
+.visible {
+  opacity: 100% !important;
 }
 
 .knob {
