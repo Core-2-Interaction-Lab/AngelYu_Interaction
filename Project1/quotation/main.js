@@ -1,4 +1,4 @@
-function typeWriter(inputString, delay = 40) {
+function typeWriter(inputString, delay = 30) {
   // split the string into an array of chars
   const letters = inputString.split('');
   
@@ -35,3 +35,14 @@ function typeWriter(inputString, delay = 40) {
 }
 
 typeWriter('The same thing is true of a quotation. When I first began writing I found it simply impossible to use question marks and quotation marks and exclamation points and now anybody sees it that way. Perhaps some day they will see it some other way but not at any rate anybody can and does see it that way.');
+
+function appendToChat(message) {
+  const blockElement = document.createElement('p');
+  blockElement.innerText = message;
+  const chat = document.querySelector('.chat');
+
+  chat.append(blockElement)
+}
+
+setTimeout(() => appendToChat('_You entered the quotation room!',1000));
+setTimeout(() => appendToChat('_This room is a dead end.'), 2000);

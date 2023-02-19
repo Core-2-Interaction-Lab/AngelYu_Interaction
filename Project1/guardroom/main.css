@@ -27,7 +27,7 @@ a {
 }
 
 p {
-  text-align: left;
+  text-align: center;
   line-height: 180%;
 }
 
@@ -39,9 +39,10 @@ pre {
 
 #typewriter-box {
   font-family: 'BIOS';
+  text-align: center;
   color: white;
-  width: 100%;
   line-height: 180%;
+  margin: 0em 8em;
 }
 
 .typewriter-letter {

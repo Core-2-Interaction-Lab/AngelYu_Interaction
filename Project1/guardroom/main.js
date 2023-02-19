@@ -1,4 +1,4 @@
-function typeWriter(inputString, delay = 40) {
+function typeWriter(inputString, delay = 30) {
   // split the string into an array of chars
   const letters = inputString.split('');
   
@@ -35,3 +35,14 @@ function typeWriter(inputString, delay = 40) {
 }
 
 typeWriter('So there are the uninteresting things in punctuation uninteresting in a way that is perfectly obvious, and so we do not have to go any farther into that. There are besides dashes and dots, and these might be interesting spaces might be interesting. They might if one felt that way about them.');
+
+function appendToChat(message) {
+  const blockElement = document.createElement('p');
+  blockElement.innerText = message;
+  const chat = document.querySelector('.chat');
+
+  chat.append(blockElement)
+}
+
+setTimeout(() => appendToChat('_You entered the guardroom!',1000));
+setTimeout(() => appendToChat('_There is no door behind you.'), 3000);

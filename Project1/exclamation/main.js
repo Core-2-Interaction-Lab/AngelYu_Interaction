@@ -35,3 +35,15 @@ function typeWriter(inputString, delay = 40) {
 }
 
 typeWriter('Exclamation marks have the same difficulty and also quotation marks, they are unnecessary, they are ugly, they spoil the line of the writing or the printing and anyway what is the use, if you do not know that a question is a question what is the use of its being a question.');
+
+function appendToChat(message) {
+  const blockElement = document.createElement('p');
+  blockElement.innerText = message;
+  const chat = document.querySelector('.chat');
+
+  chat.append(blockElement)
+}
+
+setTimeout(() => appendToChat('_You entered the exclamation room!',1000));
+setTimeout(() => appendToChat('_You become confused which door to go through.'), 5000);
+setTimeout(() => appendToChat('_There is light coming from the quotation room.'), 8000);

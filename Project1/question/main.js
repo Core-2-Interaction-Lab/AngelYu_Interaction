@@ -1,4 +1,4 @@
-function typeWriter(inputString, delay = 40) {
+function typeWriter(inputString, delay = 30) {
   // split the string into an array of chars
   const letters = inputString.split('');
   
@@ -38,3 +38,15 @@ typeWriter('Of these the one but the first and the most the completely most unin
 .then(() => typeWriter("Therefore I ask you therefore wherefore should one use the question mark. Beside it does not in its form go with ordinary printing and so it pleases neither the eye nor the ear and it is therefore like a noun, just an unnecessary name of something. "))
 .then(() => typeWriter("A question is a question, anybody can know that a question is a question and so why add to it the question mark when it is already there when the question is already there in the writing. "))
 .then(() => typeWriter("Therefore I never could bring myself to use a question mark, I always found it positively revolting, and now very few do use it."));
+
+function appendToChat(message) {
+  const blockElement = document.createElement('p');
+  blockElement.innerText = message;
+  const chat = document.querySelector('.chat');
+
+  chat.append(blockElement)
+}
+
+setTimeout(() => appendToChat('_You entered the question room!',1000));
+setTimeout(() => appendToChat('_There is a hidden door at the end of the room'), 3000);
+setTimeout(() => appendToChat('_You unlocked the exclamation door!'), 8000);

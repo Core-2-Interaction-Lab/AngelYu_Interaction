@@ -16,12 +16,32 @@ html {
     font-size: 17px;
 }
 
+article:first-of-type {
+  display: flex;
+  flex-direction: row;
+  margin: 0 10rem 0 2rem;
+}
+
+h1 {
+  font-size:30px;
+  color: red;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+p {
+  text-align: left;
+  line-height: 180%;
+}
+
+
 #typewriter-box {
     font-family: 'BIOS';
     color: white;
     line-height: 180%;
     width: 100%;
-    margin:0;
   }
   
   .typewriter-letter {
@@ -34,3 +54,36 @@ html {
     100% { opacity: 1; }
   }
   
+  .chat {
+    padding: 1rem 0;
+    position: fixed;
+    left: 0rem;
+    right: 0rem;
+    bottom: 0rem;
+  
+    background-color: #222;
+  }
+  
+  .chat p {
+    text-align: left;
+    margin:0 0.5rem;
+    line-height: 130%;
+  }
+
+#door {
+    display: inline-block;
+    margin: 0;
+    transform-origin: 0;
+    transition: transform 50ms 50ms ease-in-out;
+  }
+
+article:nth-of-type(2) div:first-of-type {
+  display: inline-block;
+  margin: auto;
+  box-shadow: 2em 0 4em 1px goldenrod;
+}
+  
+#door:hover {
+    transform: rotateY(30deg);
+    transition: transform 200ms ease-in-out;
+  }
