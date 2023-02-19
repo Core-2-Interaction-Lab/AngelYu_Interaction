@@ -45,4 +45,4 @@ function appendToChat(message) {
 }
 
 setTimeout(() => appendToChat('_You entered the guardroom!',1000));
-setTimeout(() => appendToChat('_There is no door behind you.'), 3000);
+setTimeout(() => appendToChat('_The door behind you locks.'), 5000);

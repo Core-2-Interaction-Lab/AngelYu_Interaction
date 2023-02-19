@@ -45,4 +45,4 @@ function appendToChat(message) {
 }
 
 setTimeout(() => appendToChat('_You entered the quotation room!',1000));
-setTimeout(() => appendToChat('_This room is a dead end.'), 2000);
+setTimeout(() => appendToChat('_This room is a dead end.'), 3000);

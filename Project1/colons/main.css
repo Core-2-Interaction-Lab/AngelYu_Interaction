@@ -1,36 +1,87 @@
-
 /* Font */
 
 @font-face {
-    font-family: 'BIOS';
-    src: url('../../assets/fonts/Web437_IBM_BIOS.woff') format('woff'),
+  font-family: 'BIOS';
+  src: url('../../assets/fonts/Web437_IBM_BIOS.woff') format('woff'),
     url('../../assets/fonts/Ac437_IBM_BIOS.ttf') format('ttf');
 }
 
 /* Page */
 
 html {
-    font-family: 'BIOS';
-    background-color: black;
-    color: white;
-    font-size: 17px;
+  font-family: 'BIOS';
+  background-color: black;
+  color: white;
+  font-size: 17px;
+}
+
+body {
+  margin: 2%;
+}
+
+h1 {
+  font-size: 30px;
+  color: red;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  text-align: center;
+  line-height: 180%;
+}
+
+#door {
+  display: inline-block;
+  margin: 0;
+  transform-origin: 0;
+  transition: transform 50ms 50ms ease-in-out;
+}
+
+#door:hover {
+  transform: rotateY(30deg);
+  transition: transform 200ms ease-in-out;
 }
 
 #typewriter-box {
-    font-family: 'BIOS';
-    color: white;
-    line-height: 180%;
-    width: 100%;
-    margin:0;
+  font-family: 'BIOS';
+  margin: 0;
+  color: white;
+  line-height: 200%;
+  width: 100%;
+}
+
+.typewriter-letter {
+  animation: fadeIn 30ms calc(calc(1ms * var(--delay)) * var(--pos)) ease-in forwards;
+  opacity: 0.01;
+}
+
+.chat {
+  padding: 1rem 0;
+  position: fixed;
+  left: 0rem;
+  right: 0rem;
+  bottom: 0rem;
+
+  background-color: #222;
+}
+
+.chat p {
+  text-align: left;
+  margin: 0 0.5rem;
+  line-height: 130%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.1;
   }
-  
-  .typewriter-letter {
-    animation: fadeIn 30ms calc(calc(1ms * var(--delay)) * var(--pos)) ease-in forwards;
-    opacity:0.01;
+
+  100% {
+    opacity: 1;
   }
-  
-  @keyframes fadeIn {
-    0% { opacity: 0.1; }
-    100% { opacity: 1; }
-  }
-  
+}

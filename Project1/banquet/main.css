@@ -15,10 +15,23 @@ html {
   font-size: 17px;
 }
 
+article {
+  display: flex;
+  margin: 7em 10em;
+}
+
+
 h1 {
   font-size: 30px;
   color: red;
   text-align: center;
+}
+
+h2{
+  font-size: 20px;
+  text-align: left;
+  line-height: 450%;
+  letter-spacing: 1em;
 }
 
 a {
@@ -27,36 +40,7 @@ a {
 }
 
 p {
-  text-align: left;
   line-height: 180%;
-}
-
-pre {
-  width: 20em;
-  text-align: center;
-  margin: auto;
-}
-
-#typewriter-box {
-  font-family: 'BIOS';
-  color: white;
-  width: 100%;
-  line-height: 180%;
-}
-
-.typewriter-letter {
-  animation: fadeIn 30ms calc(calc(1ms * var(--delay)) * var(--pos)) ease-in forwards;
-  opacity: 0.01;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0.1;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
 
 .chat {
@@ -75,16 +59,42 @@ pre {
   line-height: 130%;
 }
 
-#doors {
-  display: none;
-}
-
-#door {
+#door, #door-1 {
+  display: inline-block;
+  margin: 0;
   transform-origin: 0;
   transition: transform 50ms 50ms ease-in-out;
 }
 
-#door:hover {
+#door-1:hover {
+  background-color: black;
+  filter: invert();
+}
+#door, #door-1:hover {
   transform: rotateY(30deg);
   transition: transform 200ms ease-in-out;
+}
+
+#typewriter-box {
+  font-family: 'BIOS';
+  text-align:right;
+  color: white;
+  line-height: 180%;
+  width: 100%;
+  margin: -1em 0 1em 2em;
+}
+
+.typewriter-letter {
+  animation: fadeIn 30ms calc(calc(1ms * var(--delay)) * var(--pos)) ease-in forwards;
+  opacity: 0.01;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
