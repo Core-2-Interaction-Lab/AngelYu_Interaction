@@ -19,7 +19,7 @@ function togglePre() {
   added = true;
   
   setTimeout(() => appendToChat('_You revealed the question and period door!',0));
-  setTimeout(() => appendToChat('_The question door is slightly opened.'), 1000);
+  setTimeout(() => appendToChat('_The question door is slightly opened.'), 2000);
 }
 
 // scrollToBottom = element => element.scrollTo({top: element.scrollHeight, behavior:'smooth'})

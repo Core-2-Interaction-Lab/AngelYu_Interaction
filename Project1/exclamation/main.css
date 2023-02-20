@@ -63,6 +63,7 @@ p {
 .chat {
   padding: 1rem 0;
   position: fixed;
+  z-index: 3;
   left: 0rem;
   right: 0rem;
   bottom: 0rem;
@@ -77,6 +78,8 @@ p {
 }
 
 #door {
+  position: relative;
+  z-index: 1;
   display: inline-block;
   margin: 0;
   transform-origin: 0;
@@ -92,4 +95,13 @@ article:nth-of-type(2) div:first-of-type {
 #door:hover {
   transform: rotateY(30deg);
   transition: transform 200ms ease-in-out;
+}
+
+.back {
+  z-index: 0;
+  position: fixed;
+  color: #0d0d0d;
+  top: -0.5em;
+  font-size: 150px;
+  line-height: 1.5em;
 }
