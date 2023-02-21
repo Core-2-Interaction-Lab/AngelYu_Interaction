@@ -23,11 +23,7 @@ html {
     background-color: black;
     color: white;
     font-size: 100px;
-    margin: 2%;
-}
-
-body {
-    margin: 0.5%;
+    margin: 1%;
 }
 
 .wrapper {
@@ -46,19 +42,19 @@ body {
   }
   
   h1 {
-    font-family: 'Outward-Border';
-    margin: 8vw 0;
+    font-family: 'Outward';
+    margin: 2vw 0;
     font-weight: 300;
     font-size: 30vw;
     text-align: left;
-    line-height:30vw;
+    line-height:20vw;
 
     color: white;
   }
   
   a {
     text-decoration: none;
-    font-size: 10vw;
+    font-size: 9vw;
     letter-spacing: 0.2vw;
     border-bottom: 1px solid;
     margin-bottom: 36px;
@@ -68,7 +64,7 @@ body {
   
   a:hover {
     border-bottom: 1px dotted;
-    font-size: 11vw;
+    font-size: 10vw;
     color: yellow;
     transition: 300ms ease-out;
   }

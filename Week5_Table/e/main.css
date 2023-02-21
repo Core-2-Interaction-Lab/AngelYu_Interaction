@@ -5,7 +5,6 @@
     src: url('../../assets/fonts/outward-block-webfont.woff') format('woff');
 }
 
-
 @font-face {
     font-family: 'Outward-Border';
     src: url('../../assets/fonts/outward-borders-webfont.woff') format('woff');
@@ -39,9 +38,9 @@ h4 {
 }
 
 h1 {
-    margin: 10vw 1px;
+    margin: 11vw 1px 1vw;
     font-weight: 700;
-    font-size: 400px;
+    font-size: 480px;
     letter-spacing: 12px;
     
 }
