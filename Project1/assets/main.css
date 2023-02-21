@@ -97,11 +97,13 @@ p {
   .mid {
     margin: 0;
   }
+
   .knob {
     margin: 2% 40%;
   }
 
-  #door, #door2 {
+  #door,
+  #door2 {
     margin: 0 20%;
   }
 

@@ -15,6 +15,8 @@ html {
   font-size: 17px;
 }
 
+/* Text */
+
 h1 {
   font-size: 30px;
   color: red;
@@ -39,8 +41,9 @@ pre {
 
 #typewriter-box {
   font-family: 'BIOS';
+  margin: 3%;
+  font-size: 20px;
   color: white;
-  width: 100%;
   line-height: 180%;
 }
 
@@ -49,15 +52,6 @@ pre {
   opacity: 0.01;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0.1;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
 
 .chat {
   padding: 1rem 0;
@@ -108,5 +102,15 @@ pre {
   }
   .chat {
     font-size: 15px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

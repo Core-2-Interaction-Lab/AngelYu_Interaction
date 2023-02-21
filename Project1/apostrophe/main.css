@@ -50,11 +50,12 @@ p {
 }
 
 #typewriter-box {
+  font-size: 20px;
   position: relative;
   z-index: 1;
   font-family: 'BIOS';
   color: white;
-  line-height: 180%;
+  line-height: 200%;
   width: 100%;
   margin: 0;
 }

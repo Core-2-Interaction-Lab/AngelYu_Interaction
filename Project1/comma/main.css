@@ -20,6 +20,8 @@ body {
 }
 
 h1 {
+  position: relative;
+  z-index: 2;
   font-size: 30px;
   color: red;
   text-align: center;
@@ -36,9 +38,10 @@ p {
 }
 
 .com {
+  font-size: 40px;
   position: relative;
   z-index: 1;
-  margin: 25em;
+  margin: 10em 25em;
 }
 
 #doors {
