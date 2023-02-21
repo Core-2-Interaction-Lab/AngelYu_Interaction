@@ -1,5 +1,5 @@
 setTimeout(() => {
-  function typeWriterWithDoors(inputString, delay = 20) {
+  function typeWriterWithDoors(inputString, delay = 40) {
     const letters = inputString.split('');
 
     const scrollbox = document.getElementById('typewriter-box'); 
@@ -45,4 +45,4 @@ function appendToChat(message) {
 
 setTimeout(() => appendToChat('_You entered the Throne room!',1000));
 setTimeout(() => appendToChat('_The author is talking!'), 8000);
-setTimeout(() => appendToChat('_A door appears!'), 17000);
+setTimeout(() => appendToChat('_A door appears!'), 25000);

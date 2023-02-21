@@ -22,5 +22,3 @@ function togglePre() {
   setTimeout(() => appendToChat('_The question door is slightly opened.'), 2000);
 }
 
-// scrollToBottom = element => element.scrollTo({top: element.scrollHeight, behavior:'smooth'})
-// scrollToBottom( document.getElementById('chat') );

@@ -44,4 +44,4 @@ function appendToChat(message) {
 
 setTimeout(() => appendToChat('_You entered the question room!',1000));
 setTimeout(() => appendToChat('_There is a hidden door at the end of the room'), 8000);
-setTimeout(() => appendToChat('_You unlocked the exclamation door!'), 9000);
+setTimeout(() => appendToChat('_You unlocked the exclamation door!'), 10000);

@@ -100,3 +100,13 @@ pre {
   transform: rotateY(30deg);
   transition: transform 200ms ease-in-out;
 }
+
+@media (max-width:700px) {
+  article {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .chat {
+    font-size: 15px;
+  }
+}

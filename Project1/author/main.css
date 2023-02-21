@@ -1,9 +1,8 @@
-
 /* Font */
 
 @font-face {
-    font-family: 'BIOS';
-    src: url('../../assets/fonts/Web437_IBM_BIOS.woff') format('woff'),
+  font-family: 'BIOS';
+  src: url('../../assets/fonts/Web437_IBM_BIOS.woff') format('woff'),
     url('../../assets/fonts/Ac437_IBM_BIOS.ttf') format('ttf');
 }
 
@@ -44,7 +43,7 @@ p {
 #door {
   display: inline-block;
   background-color: white;
-  color:black;
+  color: black;
   margin: 2em 27em;
   transform-origin: 0;
   transition: transform 50ms 50ms ease-in-out;
@@ -58,7 +57,7 @@ p {
 #typewriter-box {
   font-family: 'BIOS';
   margin: 0;
-  color: white;
+  color: yellowgreen;
   line-height: 200%;
   width: 100%;
 }
@@ -93,4 +92,30 @@ p {
     opacity: 1;
   }
 }
-  
+
+@media (max-width:700px) {
+  body {
+    margin: 1%;
+  }
+
+  article {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  p {
+    margin: 10%;
+  }
+
+  .chat {
+    font-size: 15px;
+  }
+
+  #typewriter-box {
+    font-size: 15px;
+  }
+
+  #door {
+    margin: 4em;
+  }
+}

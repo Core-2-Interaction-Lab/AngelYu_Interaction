@@ -27,7 +27,7 @@ h1 {
   text-align: center;
 }
 
-h2{
+h2 {
   font-size: 20px;
   text-align: left;
   line-height: 450%;
@@ -59,7 +59,8 @@ p {
   line-height: 130%;
 }
 
-#door, #door-1 {
+#door,
+#door-1 {
   display: inline-block;
   margin: 0;
   transform-origin: 0;
@@ -69,18 +70,20 @@ p {
 #door-1:hover {
   background-color: black;
   filter: invert();
+  transform: rotateY(30deg);
+  transition: transform 200ms ease-in-out;
 }
-#door, #door-1:hover {
+
+#door:hover {
   transform: rotateY(30deg);
   transition: transform 200ms ease-in-out;
 }
 
 #typewriter-box {
   font-family: 'BIOS';
-  text-align:right;
+  text-align: right;
   color: white;
   line-height: 180%;
-  width: 100%;
   margin: -1em 0 1em 2em;
 }
 
@@ -96,5 +99,31 @@ p {
 
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width:700px) {
+  article {
+    margin: 1em;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  h2 {
+    font-size: 20px;
+    line-height: 1000%;
+  }
+
+    #door-1{ 
+      filter: invert();
+      background-color: black;
+    }
+  .chat {
+    font-size: 15px;
+  }
+
+  #typewriter-box {
+    font-size: 15px;
+    margin: 0;
   }
 }

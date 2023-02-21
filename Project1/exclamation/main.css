@@ -105,3 +105,17 @@ article:nth-of-type(2) div:first-of-type {
   font-size: 150px;
   line-height: 1.5em;
 }
+
+@media (max-width:700px) {
+  article {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .chat {
+    font-size: 15px;
+  }
+  #typewriter-box {
+    font-size: 15px;
+  }
+  
+}

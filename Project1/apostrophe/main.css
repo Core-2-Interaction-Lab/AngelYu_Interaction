@@ -17,6 +17,8 @@ html {
 
 
 h1 {
+  position: relative;
+  z-index: 2;
   font-size: 30px;
   color: red;
   text-align: center;
@@ -34,7 +36,9 @@ p {
 }
 
 #door {
-  display:inline-block;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
   margin: 0 28em;
   transform-origin: 0;
   transition: transform 50ms 50ms ease-in-out;
@@ -46,6 +50,8 @@ p {
 }
 
 #typewriter-box {
+  position: relative;
+  z-index: 1;
   font-family: 'BIOS';
   color: white;
   line-height: 180%;
@@ -59,6 +65,7 @@ p {
 }
 
 .chat {
+  z-index: 4;
   padding: 1rem 0;
   position: fixed;
   left: 0rem;
@@ -74,6 +81,17 @@ p {
   line-height: 130%;
 }
 
+.back {
+  text-align: left;
+  z-index: 0;
+  position: fixed;
+  color: #0d0d0d;
+  top: -2em;
+  left: -2em;
+  font-size: 150px;
+  line-height: 1.5em;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0.1;
@@ -81,5 +99,21 @@ p {
 
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width:700px) {
+  article {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .chat {
+    font-size: 15px;
+  }
+  #typewriter-box {
+    font-size: 15px;
+  }
+  #door {
+    margin: 0 6em;
   }
 }

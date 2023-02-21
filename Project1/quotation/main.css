@@ -60,10 +60,21 @@ pre {
 }
 
 #door {
+  position: relative;
   display: inline-block;
+  z-index: 1;
   margin: auto;
   transform-origin: 0;
   transition: transform 50ms 50ms ease-in-out;
+}
+
+.back {
+  z-index: 0;
+  position: fixed;
+  color: #0d0d0d;
+  top: -0.5em;
+  font-size: 200px;
+  line-height: 1.5em;
 }
 
 #door:hover {
@@ -92,5 +103,20 @@ pre {
 
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width:700px) {
+  article {
+  }
+  .chat {
+    font-size: 15px;
+  }
+  #typewriter-box {
+    font-size: 15px;
+  }
+
+  .back {
+    font-size: 150px;
   }
 }

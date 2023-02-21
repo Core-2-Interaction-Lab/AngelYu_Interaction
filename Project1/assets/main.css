@@ -87,3 +87,34 @@ p {
   text-align: left;
   margin: 0 0.5rem;
 }
+
+@media (max-width:700px) {
+  article {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .mid {
+    margin: 0;
+  }
+  .knob {
+    margin: 2% 40%;
+  }
+
+  #door, #door2 {
+    margin: 0 20%;
+  }
+
+  #door {
+    margin-top: 30%;
+  }
+
+  #door2 {
+    color: #333;
+    margin-bottom: 10em;
+  }
+
+  .chat {
+    font-size: 15px;
+  }
+}

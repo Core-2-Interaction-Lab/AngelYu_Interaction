@@ -44,3 +44,20 @@ h2 {
     100% { opacity: 1; }
   }
   
+  @media (max-width:700px) {
+    article {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    h1 {
+      font-size: 400px;
+      margin: 0;
+    }    
+    h2 {
+      font-size: 140px;
+      margin: 0;
+    }
+    #typewriter-box {
+    }
+    
+  }

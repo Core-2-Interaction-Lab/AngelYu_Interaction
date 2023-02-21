@@ -36,6 +36,8 @@ p {
 }
 
 .com {
+  position: relative;
+  z-index: 1;
   margin: 25em;
 }
 
@@ -44,6 +46,8 @@ p {
 }
 
 #door {
+  position: relative;
+  z-index: 1;
   display: inline-block;
   margin: 0;
   transform-origin: 0;
@@ -56,6 +60,8 @@ p {
 }
 
 #typewriter-box {
+  position: relative;
+  z-index: 1;
   font-family: 'BIOS';
   color: white;
   line-height: 200%;
@@ -68,6 +74,7 @@ p {
 }
 
 .chat {
+  z-index: 3;
   padding: 1rem 0;
   position: fixed;
   left: 0rem;
@@ -91,4 +98,38 @@ p {
   100% {
     opacity: 1;
   }
+}
+
+.back {
+  z-index: 0;
+  position: fixed;
+  color: #0d0d0d;
+  top: -0.5em;
+  font-size: 150px;
+  line-height: 1.5em;
+}
+
+@media (max-width:700px) {
+  article {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  p {
+    margin: 1em;
+    line-height: 200%;
+  }
+  .com{
+    font-size: 30px;
+    margin: 4em 2em;
+  }
+  .chat {
+    font-size: 15px;
+  }
+  #door {
+    margin-bottom: 4em;
+  }
+  #typewriter-box {
+    font-size: 15px;
+  }
+  
 }
