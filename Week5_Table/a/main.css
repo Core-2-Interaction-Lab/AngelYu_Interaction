@@ -31,10 +31,10 @@ h1,
 h2,
 h3,
 h4 {
-    font-weight: 100;
+    font-weight: 130;
     line-height: 10vw;
-    letter-spacing: 8vw;
-    margin: 1vw 1vw;
+    letter-spacing: 1vw;
+    margin: 1vw;
 }
 
 h2, h3, h4 {
@@ -42,12 +42,11 @@ h2, h3, h4 {
 }
 
 h2, h3 {
-    margin: 5vw 1vw;
-    text-align: right;
+    margin: 1vw 10vw 2vw 50vw;
+    text-align: left;
 }
 
 h4 {
-    letter-spacing: 2vw;
     margin: 3vw;
     text-align: right;
 }
