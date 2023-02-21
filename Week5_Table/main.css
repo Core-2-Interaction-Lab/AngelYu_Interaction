@@ -43,15 +43,26 @@ html {
   
   h1 {
     font-family: 'Outward';
-    margin: 2vw 0;
+    margin: 2vw 0 -1.2vw;
     font-weight: 300;
     font-size: 30vw;
     text-align: left;
     line-height:20vw;
 
+    border-bottom: 2px solid #333;
     color: white;
   }
+
+  h2 {
+    margin: 11vw 0 0vw 0;
+    border-bottom: 2px solid #333;
+  }
   
+  h3 {
+    margin: 5vw 0 2vw 0;
+    border-bottom: 2px solid #333;
+  }
+
   a {
     text-decoration: none;
     font-size: 9vw;
