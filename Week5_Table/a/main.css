@@ -1,0 +1,58 @@
+/* Font */
+
+@font-face {
+    font-family: 'Outward';
+    src: url('../../../assets/fonts/outward-block-webfont.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Outward-Border';
+    src: url('../../../assets/fonts/outward-borders-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Outward-Round';
+    src: url('../../../assets/fonts/outward-round-webfont.woff') format('woff');
+}
+
+/* Page */
+
+html {
+    font-family: 'Outward-Round';
+    background-color: black;
+    color: white;
+    margin: 2vw;
+    font-size: 130px;
+}
+
+/* Text */
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 100;
+    line-height: 10vw;
+    letter-spacing: 8vw;
+    margin: 1vw 1vw;
+}
+
+h2, h3, h4 {
+    color: yellowgreen;
+}
+
+h2, h3 {
+    margin: 5vw 1vw;
+    text-align: right;
+}
+
+h4 {
+    letter-spacing: 2vw;
+    margin: 3vw;
+    text-align: right;
+}
+
+p {
+    font-family: 'Outward';
+    line-height: 15vw;
+}
