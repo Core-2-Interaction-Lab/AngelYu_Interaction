@@ -1,0 +1,86 @@
+[
+	{
+		"title": "FedEx Cup Playoffs",
+		"location": "https://en.wikipedia.org/wiki/2021_FedEx_Cup_Playoffs ",
+		"description": "Flag of United States",
+		"partner": "Destiny Chen",
+		"posterImage": "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
+	},
+	{
+		"title": "2021 American Sports",
+		"location": "https://en.wikipedia.org/wiki/Category:2021_in_American_sports",
+		"description": "Flag of United States",
+		"partner": "Angel Yu",
+		"posterImage": "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
+	},
+	{
+		"title": "Winter X Games",
+		"location": "https://en.wikipedia.org/wiki/Winter_X_Games_XXV",
+		"description": "Downtown Aspen (2005)",
+		"partner": "Destiny Chen",
+		"posterImage": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Downtown_of_Aspen%2C_Colorado.jpg"
+	},
+	{
+		"title": "Colorado",
+		"location": "https://en.wikipedia.org/wiki/Colorado",
+		"description": "Flag",
+		"partner": "Angel Yu",
+		"posterImage": "https://upload.wikimedia.org/wikipedia/commons/4/46/Flag_of_Colorado.svg"
+	},
+	{
+		"title": "Abraham Lincoln",
+		"location": "https://en.wikipedia.org/wiki/Abraham_Lincoln",
+		"description": "Scholars and enthusiasts alike believe this portrait of Abraham Lincoln, taken on November 8, 1863, eleven days before his famed Gettysburg Address, to be the best photograph of him ever taken. Lincoln’s character was notoriously difficult to capture in pictures, but Alexander Gardner’s close-up portrait, quite innovative in contrast to the typical full-length portrait style, comes closest to preserving the expressive contours of Lincoln’s face and his penetrating gaze.",
+		"partner": "Destiny Chen",
+		"posterImage": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Abraham_Lincoln_O-77_matte_collodion_print.jpg"
+	},
+	{
+		"title": "Log Cabin",
+		"location": "https://en.wikipedia.org/wiki/Log_cabin",
+		"description": "A log cabin in Ruka, a popular ski resort area of North Ostrobothnia, Finland.",
+		"partner": "Angel Yu",
+		"posterImage": "https://upload.wikimedia.org/wikipedia/commons/5/54/Ice_Mountain_%285517382157%29.jpg"
+	},
+	{
+		"title": "Dry Rot",
+		"location": "https://en.wikipedia.org/wiki/Dry_rot",
+		"description": "Wood decay caused by the brown rot fungus Serpula lacrymans (true dry rot)",
+		"partner": "Destiny Chen",
+		"posterImage": "https://upload.wikimedia.org/wikipedia/commons/1/14/Braunfaeule_Holz_FI20070208.jpg"
+	},
+	{
+		"title": "Fungus",
+		"location": "https://en.wikipedia.org/wiki/Fungus",
+		"description": "Clockwise from top left, Amanita muscaria, a basidiomycete, Sarcoscypha coccinea, an ascomycete,bread covered in mold,a chytrid,an Aspergillus conidiophore.",
+		"partner": "Angel Yu",
+		"posterImage": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Fungi_collage.jpg"
+	},
+	{
+		"title": "Soy Sauce",
+		"location": "https://en.wikipedia.org/wiki/Soy_sauce",
+		"description": "Shoyu ramen",
+		"partner": "Destiny Chen",
+		"posterImage": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Shoyu_Ramen.jpg"
+	},
+	{
+		"title": "Soviet Union",
+		"location": "https://en.wikipedia.org/wiki/Soviet_Union",
+		"description": "Flag",
+		"partner": "Angel Yu",
+		"posterImage": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_the_Soviet_Union.svg"
+	},
+	{
+		"title": "Nuclear Arms Race",
+		"location": "https://en.wikipedia.org/wiki/Nuclear_arms_race",
+		"description": "The blast of the underwater nuclear bomb test Crossroads Baker",
+		"partner": "Destiny Chen",
+		"posterImage": "https://upload.wikimedia.org/wikipedia/commons/0/00/Moscow_Parad_2008_Ballist.jpg"
+	},
+	{
+		"title": "Vladimir Putin",
+		"location": "https://en.wikipedia.org/wiki/Vladimir_Putin",
+		"description": "Putin in 2021",
+		"partner": "Angel Yu",
+		"posterImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Vladimir_Putin_17-11-2021_%28cropped%29.jpg/440px-Vladimir_Putin_17-11-2021_%28cropped%29.jpg"
+	}
+]
