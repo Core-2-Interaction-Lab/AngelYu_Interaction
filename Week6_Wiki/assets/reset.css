@@ -12,7 +12,8 @@ main {
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 3em;
+	font-weight: bolder;
 	margin: .67em 0
 }
 
@@ -28,7 +29,10 @@ pre {
 }
 
 a {
-	background-color: transparent
+	background-color: transparent;
+	text-decoration: dashed;
+	color: #265221;
+
 }
 
 abbr[title] {
@@ -71,7 +75,8 @@ sup {
 }
 
 img {
-	border-style: none
+	border-style: none;
+	border-radius: 1em;
 }
 
 button,
@@ -99,7 +104,10 @@ select {
 [type=reset],
 [type=submit],
 button {
-	-webkit-appearance: button
+	-webkit-appearance: button;
+	appearance: button;
+	color: darkgreen;
+	border-color: black;
 }
 
 [type=button]::-moz-focus-inner,
@@ -151,6 +159,7 @@ textarea {
 
 [type=search] {
 	-webkit-appearance: textfield;
+	appearance: textfield;
 	outline-offset: -2px
 }
 

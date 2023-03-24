@@ -16,3 +16,33 @@
     0% { opacity: 0.1; }
     100% { opacity: 1; }
   }
+
+  .svg-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .svg-container svg {
+    display: block;
+  }
+  
+  .text-container {
+    position: absolute;
+    top: -50px;
+    right: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .svg-container:hover .text-container {
+    opacity: 1;
+  }
+  
+  .text {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
