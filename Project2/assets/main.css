@@ -36,13 +36,6 @@ h1 {
     font-size: 40px;
 }
 
-.map {
-  display: block;
-  position: relative;
-  height: ;
-  width: 100%;
-  margin: 0 auto;
-}
 
 .bar {
     position: relative;
@@ -90,8 +83,8 @@ button a {
 /*PNG Icons*/
 .totem {
     position: absolute;
-    top: 200px;
-    left: 330px;
+    top: 30%;
+    left: 20%;
     z-index: 1;
     transition: transform 0.3s ease-in-out;
   }
