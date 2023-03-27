@@ -22,10 +22,11 @@ h1 {
   text-align: center;
 }
 
-article:first-child{
+article:first-child {
   display: flex;
   justify-content: center;
 }
+
 a {
   text-decoration: none;
   color: white;
@@ -111,6 +112,7 @@ pre {
   .chat {
     font-size: 15px;
   }
+
   #typewriter-box {
     font-size: 15px;
   }

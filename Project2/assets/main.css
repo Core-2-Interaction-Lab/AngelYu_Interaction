@@ -12,12 +12,17 @@ body {
 section {
     display: flex;
     flex-direction: column;
+    width: 100%;
+}
+
+article {
+  position: relative;
 }
 
 img {
     display: block;
     position: relative;
-
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -31,12 +36,31 @@ h1 {
     font-size: 40px;
 }
 
+.map {
+  display: block;
+  position: relative;
+  height: ;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .bar {
     position: relative;
     bottom: 0;
     padding: .4em;
     text-align: center;
     background-color: #232323;
+}
+
+
+.bar2 {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  margin: auto;
+  padding: .4em;
+  text-align: center;
+  background-color: #232323;
 }
 
 /*Button*/
@@ -65,9 +89,10 @@ button a {
 
 /*PNG Icons*/
 .totem {
-    position: fixed;
+    position: absolute;
     top: 200px;
     left: 330px;
+    z-index: 1;
     transition: transform 0.3s ease-in-out;
   }
   
