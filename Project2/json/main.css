@@ -10,17 +10,18 @@ h1 {
   
   #collection-list {
     list-style-type: none;
+    display: flex;
     margin: 0;
-    padding: 0;
-    font-size: 25px;
-    line-height: 200%;
-    font-weight: bold;
+    padding: 79px;
+    font-size: 120%;
+    line-height: 160%;
+    font-weight:200;
   }
   
   #collection-list li {
     display: flex;
-    margin: 40px;
-    padding: 10px 200px;
+    margin: 3%;
+    padding: 10px;
     align-items: center;
     
     border-radius: 80px;
@@ -28,7 +29,7 @@ h1 {
   }
   
   #collection-list li img {
-    max-width: 400px;
+    max-width: 300px;
     margin-right: 5%;
   }
    

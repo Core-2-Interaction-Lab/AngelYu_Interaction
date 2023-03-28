@@ -1,10 +1,9 @@
-// Fetch data from collection.json file
+
 fetch('collection.json')
   .then(response => response.json())
   .then(data => {
     const collectionList = document.getElementById('collection-list');
 
-    // Loop through the collection and create list items
     data.forEach(item => {
       const listItem = document.createElement('li');
       const itemInfo = `
