@@ -1,8 +1,7 @@
 html {
-  background-color: #3d3d3d;
-  color: white;
+  background-color: #5CDB95;
+  color: #EDF5E1;
   font-family: 'Josefin Sans', sans-serif;
-  font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -19,66 +18,89 @@ article {
   position: relative;
 }
 
+article:nth-of-type(4) {
+  background-color: #05386B;
+}
+
 img {
   display: block;
   position: relative;
   width: 100%;
-  margin: 0 auto;
+  margin: 1em auto;
+  ;
 }
 
 
 a {
   text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
 }
 
 h1 {
-  margin: 0;
+  margin: 1%;
   text-align: center;
-  font-size: 40px;
+  font-weight: bolder;
+  font-size: 80px;
 }
 
+/*Bar*/ 
+.map {
+  filter:invert(48%) sepia(79%) saturate(3000%) hue-rotate(170deg) brightness(40%) contrast(120%);
+}
 
 /*Bar*/ 
 
 .bar {
   position: relative;
   bottom: 0;
-  padding: .4em;
+  padding: 0.5em;
   text-align: center;
-  background-color: #232323;
+  background-color: #05386B;
 }
 
 .bar2 {
-  position: fixed;
+  position: relative;
   width: 100%;
-  bottom: 0;
+  top: 10px;
   margin: auto;
-  padding: .4em;
+  padding: .7em;
   text-align: center;
-  background-color: #232323;
+  background-color: #05386B;
 }
 
 /*Button*/
 
 button {
-  background-color: #616161;
+  background-color: #05386B;
   border: none;
-  color: white;
+  color: #EDF5E1;
+  border-style: solid ;
+  border-color: #EDF5E1;
   margin: 0em 0.5em;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  border-radius: 4px;
   cursor: pointer;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
 }
 
 button:hover {
-  background-color: #57e185;
+  background-color: #EDF5E1;
+  color: #05386B;
 }
 
 button a {
-  color: white;
+  color: #EDF5E1;
+  text-decoration: none;
+}
+
+button a:hover {
+  color: #05386B;
   text-decoration: none;
 }
 
@@ -228,10 +250,6 @@ button a {
   right: 34%;
 }
 
-
-
-
-
 .object1,
 .object2,
 .object3,
@@ -262,7 +280,6 @@ button a {
 .object28,
 .object29 {
   position: absolute;
-  z-index: 1;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -298,7 +315,8 @@ button a {
   display: block;
   width: 35px;
   height: auto;
-  filter: drop-shadow(0 0 5px #57e185);
+  z-index: 1;
+  filter: grayscale(1);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -331,5 +349,46 @@ button a {
 .object27 img:hover,
 .object28 img:hover,
 .object29 img:hover {
+  z-index: 4;
   transform: scale(5);
+  filter: grayscale(0)
+}
+  
+
+/* collection */
+#collection-list {
+  position: relative;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin: 5% 5%;
+  padding: 50px;
+  font-size: 200%;
+  line-height: 160%;
+  font-weight:200;
+  overflow-y: scroll;
+  height: 400px;
+
+  background-color: #EDF5E1;
+  border-radius: 20px;
+}
+
+#collection-list li {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1%;
+  
+  border-radius: 40px;
+  background-color: #05386B;
+}
+
+#collection-list li img {
+  max-width: 340px;
+  margin: 2% 9%;
+}
+ 
+#collection-list li p {
+  margin: 0;
 }
