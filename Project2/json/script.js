@@ -1,0 +1,23 @@
+// Fetch data from collection.json file
+fetch('collection.json')
+  .then(response => response.json())
+  .then(data => {
+    const collectionList = document.getElementById('collection-list');
+
+    // Loop through the collection and create list items
+    data.forEach(item => {
+      const listItem = document.createElement('li');
+      const itemInfo = `
+        <p>
+          Name: ${item.name} (${item.year}) <br>
+          Location: ${item.location} <br>
+          Type: ${item.type} <br>
+          Companion: ${item.companion}
+        </p>
+      `;
+      const itemImg = `<img src="${item.photo}.png">`;
+      listItem.innerHTML = itemImg + itemInfo;
+      collectionList.appendChild(listItem);
+    });
+  })
+  .catch(error => console.error(error));

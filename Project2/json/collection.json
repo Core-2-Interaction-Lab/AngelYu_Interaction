@@ -1,0 +1,291 @@
+[
+  {
+    "id": "1",
+    "type": "Woodcarving",
+    "name": "2 Women Dancing",
+    "photo": "../assets/photos/1-bali",
+    "location": "Bali, Indonesia",
+    "year": "1986",
+    "companion": "Best Friend Steve"
+  },
+
+  {
+    "id": "2",
+    "type": "Woodcarving",
+    "name": "Woman on Top of a Swan",
+    "photo": "../assets/photos/2-bali",
+    "location": "Bali, Indonesia",
+    "year": "1986",
+    "companion": "Best Friend Steve"
+  },
+
+  {
+    "id": "3",
+    "type": "Candle Stand",
+    "name": "Balancing Woman",
+    "photo": "../assets/photos/3-bali",
+    "location": "Bali, Indonesia",
+    "year": "1986",
+    "companion": "Best Friend Steve"
+  },
+
+  {
+    "id": "4",
+    "type": "Statue",
+    "name": "Thai Buddha",
+    "photo": "../assets/photos/4-thailand",
+    "location": "Bangkok, Thailand",
+    "year": "1996",
+    "companion": "Best Friend Steve"
+  },
+
+  {
+    "id": "5",
+    "type": "Water Pitcher",
+    "name": "Traditional Lead Pitcher",
+    "photo": "../assets/photos/5-saudi",
+    "location": "Saudi Arabia",
+    "year": "2002",
+    "companion": "Best Friend Steve"
+  },
+
+  {
+    "id": "6",
+    "type": "Handcarved Wooden Stick",
+    "name": "Skinny Man Stick",
+    "photo": "../assets/photos/6-africa",
+    "location": "Tunisia, Africa",
+    "year": "2003",
+    "companion": "Best Friend Steve"
+  },
+
+  {
+    "id": "7",
+    "type": "Ceramic",
+    "name": "Baby Crossing Legs",
+    "photo": "../assets/photos/7-tokyo",
+    "location": "Tokyo, Japan",
+    "year": "2004",
+    "companion": "Best Friend Steve"
+  },
+
+  {
+    "id": "8",
+    "type": "Clay Statue",
+    "name": "Mother Holding Baby from Incas",
+    "photo": "../assets/photos/8-inca",
+    "location": "Peru",
+    "year": "1995",
+    "companion": "Best Friend Steve"
+  },
+
+  {
+    "id": "9",
+    "type": "Woodcarving",
+    "name": "Woman on Top of a Swan",
+    "photo": "../assets/photos/9-borobudur",
+    "location": "Bali, Indonesia",
+    "year": "1986",
+    "companion": "Best Friend Steve"
+  },
+
+  {
+    "id": "10",
+    "type": "Glass Bottle",
+    "name": "Incense in a Glass",
+    "photo": "../assets/photos/10-china",
+    "location": "Shanghai, China",
+    "year": "2018",
+    "companion": "Best Friend Steve"
+  },
+
+  {
+    "id": "11",
+    "type": "Ceramic",
+    "name": "Writing Calligraphy",
+    "photo": "../assets/photos/11-japan",
+    "location": "Tokyo, Japan",
+    "year": "2013",
+    "companion": "Best Friend Steve"
+  },
+
+  {
+    "id": "12",
+    "type": "Carved Wooden Box",
+    "name": "Traditional Wooden Box",
+    "photo": "../assets/photos/12-peru",
+    "location": "Cuszo, Peru",
+    "year": "1999",
+    "companion": "Best Friend Steve"
+  },
+
+  {
+    "id": "13",
+    "type": "Mug",
+    "name": "Swiss Mug",
+    "photo": "../assets/photos/13-swiss",
+    "location": "Gstaad, Switzerland",
+    "year": "2015",
+    "companion": "Mother"
+  },
+
+  {
+    "id": "14",
+    "type": "Copper Ashtray",
+    "name": "Handmade and Forged Ashtray",
+    "photo": "../assets/photos/14-canada",
+    "location": "Richmond Hill, Canada",
+    "year": "1976",
+    "companion": "Family"
+  },
+
+  {
+    "id": "15",
+    "type": "Copper",
+    "name": "Head Statue",
+    "photo": "../assets/photos/15-norway",
+    "location": "Norway",
+    "year": "2011",
+    "companion": "Mother"
+  },
+
+  {
+    "id": "16",
+    "type": "Traditional Wax Painting",
+    "name": "Picking Fruits",
+    "photo": "../assets/photos/16-bali",
+    "location": "Bali, Indonesia",
+    "year": "1986",
+    "companion": "Wife"
+  },
+
+  {
+    "id": "17",
+    "type": "Acrylic Painting",
+    "name": "Croatia Painting",
+    "photo": "../assets/photos/17-croatia",
+    "location": "Dubrovnik, Croatia",
+    "year": "2001",
+    "companion": "Best Friend Steve"
+  },
+
+  {
+    "id": "18",
+    "type": "Wooden Coaster",
+    "name": "Handmade Wooden Coasters",
+    "photo": "../assets/photos/18-columbia",
+    "location": "Bogota, Columbia",
+    "year": "2001",
+    "companion": "Best Friend Steve"
+  },
+
+  {
+    "id": "19",
+    "type": "Painting",
+    "name": "Jamaican Dance",
+    "photo": "../assets/photos/19-jamaica",
+    "location": "Montigo Bay, Jamaica",
+    "year": "2002",
+    "companion": "Best Friend Steve"
+  },
+
+  {
+    "id": "20",
+    "type": "Ceramic",
+    "name": "Spoon Rest",
+    "photo": "../assets/photos/20-china",
+    "location": "Beiking, China",
+    "year": "1986",
+    "companion": "Best Friend Steve"
+  },
+
+  {
+    "id": "21",
+    "type": "Wooden Spoon",
+    "name": "Happy Spoon",
+    "photo": "../assets/photos/21-slovenia",
+    "location": "Slovenia",
+    "year": "2016",
+    "companion": "Wife"
+  },
+
+  {
+    "id": "22",
+    "type": "Plushie",
+    "name": "Koala with a Boomerang",
+    "photo": "../assets/photos/22-australia",
+    "location": "Austrlia",
+    "year": "2013",
+    "companion": "Mother"
+  },
+
+  {
+    "id": "23",
+    "type": "Ceramic",
+    "name": "Goose Egg Holders",
+    "photo": "../assets/photos/23-rome",
+    "location": "Rome, Italy",
+    "year": "2016",
+    "companion": "Wife"
+  },
+
+  {
+    "id": "24",
+    "type": "Wooden Carving",
+    "name": "Pencil Holder",
+    "photo": "../assets/photos/24-canada",
+    "location": "Vancouver, Canada",
+    "year": "2011",
+    "companion": "Skiing Friend Mike"
+  },
+
+  {
+    "id": "25",
+    "type": "Jade",
+    "name": "Jade Shot Glasses",
+    "photo": "../assets/photos/25-china",
+    "location": "China",
+    "year": "1986",
+    "companion": "Best Friend Steve"
+  },
+
+  {
+    "id": "26",
+    "type": "Marble",
+    "name": "Marble Coasters",
+    "photo": "../assets/photos/26-NY",
+    "location": "New York, United States",
+    "year": "2009",
+    "companion": "Family"
+  },
+
+  {
+    "id": "27",
+    "type": "Magnet",
+    "name": "Hong Kong Magnet",
+    "photo": "../assets/photos/27-HK",
+    "location": "Hong Kong, China",
+    "year": "2015",
+    "companion": "Family"
+  },
+
+  {
+    "id": "28",
+    "type": "Magnet",
+    "name": "Mexican Magnets",
+    "photo": "../assets/photos/28-mexico",
+    "location": "Mexico City, Mexico",
+    "year": "2018",
+    "companion": "Family"
+  },
+
+  {
+    "id": "29",
+    "type": "Magnet",
+    "name": "Dubai Magnet",
+    "photo": "../assets/photos/29-dubai",
+    "location": "Dubai, United Arab Emirates",
+    "year": "2017",
+    "companion": "Family"
+  }
+]

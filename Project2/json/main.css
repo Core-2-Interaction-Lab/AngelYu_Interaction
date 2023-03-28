@@ -1,0 +1,38 @@
+html {
+    background-color: #616161;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    text-align: center;
+  }
+  
+  #collection-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    line-height: 200%;
+    font-weight: bold;
+  }
+  
+  #collection-list li {
+    display: flex;
+    margin: 40px;
+    padding: 10px 200px;
+    align-items: center;
+    
+    border-radius: 80px;
+    background-color: #a1a1a1;
+  }
+  
+  #collection-list li img {
+    max-width: 400px;
+    margin-right: 5%;
+  }
+   
+  #collection-list li p {
+    margin: 0;
+  }
+  

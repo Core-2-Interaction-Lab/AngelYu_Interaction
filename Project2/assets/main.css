@@ -1,18 +1,18 @@
 html {
-    background-color: #3d3d3d;
-    color: white;
-    font-family: 'Josefin Sans', sans-serif;
-    font-family: 'Montserrat', sans-serif;
+  background-color: #3d3d3d;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 section {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 article {
@@ -20,31 +20,33 @@ article {
 }
 
 img {
-    display: block;
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
 }
 
+
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 h1 {
-    margin: 0;
-    text-align: center;
-    font-size: 40px;
+  margin: 0;
+  text-align: center;
+  font-size: 40px;
 }
 
+
+/*Bar*/ 
 
 .bar {
-    position: relative;
-    bottom: 0;
-    padding: .4em;
-    text-align: center;
-    background-color: #232323;
+  position: relative;
+  bottom: 0;
+  padding: .4em;
+  text-align: center;
+  background-color: #232323;
 }
-
 
 .bar2 {
   position: fixed;
@@ -59,63 +61,275 @@ h1 {
 /*Button*/
 
 button {
-    background-color: #616161;
-    border: none;
-    color: white;
-    margin: 0em 0.5em;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
+  background-color: #616161;
+  border: none;
+  color: white;
+  margin: 0em 0.5em;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #57e185;
+  background-color: #57e185;
 }
 
 button a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 /*PNG Icons*/
-.totem {
-    position: absolute;
-    top: 30%;
-    left: 20%;
-    z-index: 1;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .totem:hover {
-    transform: scale(1.1);
-  }
-  
-  .totem img {
-    display: block;
-    width: 20px;
-    height: auto;
-  }
-  
-  .text-container {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    background-color: rgba(98, 236, 195, 0.6);
-    border-radius: 3px;
-    padding: 10px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  .totem:hover .text-container {
-    opacity: 1;
-  }
-  
-  .text {
-    font-size: 14px;
-    font-weight: bold;
-  }
-  
+.object1 {
+  top: 68%;
+  right: 10%;
+}
+
+.object2 {
+  top: 60%;
+  right: 12%;
+}
+
+.object3 {
+  top: 61%;
+  right: 10%;
+}
+
+.object4 {
+  top: 44%;
+  right: 19%;
+}
+
+.object5 {
+  top: 38%;
+  right: 38%;
+}
+
+.object6 {
+  top: 33%;
+  right: 50%;
+}
+
+.object7 {
+  top: 30%;
+  right: 6%;
+}
+
+.object8 {
+  top: 65%;
+  right: 80%;
+}
+
+.object9 {
+  top: 64%;
+  right: 14%;
+}
+
+.object10 {
+  top: 31%;
+  right: 14%;
+}
+
+.object11 {
+  top: 35%;
+  right: 6%;
+}
+
+.object12 {
+  top: 68%;
+  right: 78%;
+}
+
+.object13 {
+  top: 22%;
+  right: 50%;
+}
+
+.object14 {
+  top: 22%;
+  right: 78%;
+}
+
+.object15 {
+  top: 10%;
+  right: 49%;
+}
+
+.object16 {
+  top: 69%;
+  right: 13%;
+}
+
+.object17 {
+  top: 23%;
+  right: 46%;
+}
+
+.object18 {
+  top: 54%;
+  right: 79%;
+}
+
+.object19 {
+  top: 43%;
+  right: 81%;
+}
+
+.object20 {
+  top: 37%;
+  right: 16%;
+}
+
+.object21 {
+  top: 22%;
+  right: 48%;
+}
+
+.object22 {
+  top: 80%;
+  right: 2%;
+}
+
+.object23 {
+  top: 28%;
+  right: 48%;
+}
+
+.object24 {
+  top: 22%;
+  right: 91%;
+}
+
+.object25 {
+  top: 35%;
+  right: 12%;
+}
+
+.object26 {
+  top: 29%;
+  right: 78%;
+}
+
+.object27 {
+  top: 40%;
+  right: 13%;
+}
+
+.object28 {
+  top: 41%;
+  right: 88%;
+}
+
+.object29 {
+  top: 39%;
+  right: 34%;
+}
+
+
+
+
+
+.object1,
+.object2,
+.object3,
+.object4,
+.object5,
+.object6,
+.object7,
+.object8,
+.object9,
+.object10,
+.object11,
+.object12,
+.object13,
+.object14,
+.object15,
+.object16,
+.object17,
+.object18,
+.object19,
+.object20,
+.object21,
+.object22,
+.object23,
+.object24,
+.object25,
+.object26,
+.object27,
+.object28,
+.object29 {
+  position: absolute;
+  z-index: 1;
+  transition: transform 0.3s ease-in-out;
+}
+
+.object1 img,
+.object2 img,
+.object3 img,
+.object4 img,
+.object5 img,
+.object6 img,
+.object7 img,
+.object8 img,
+.object9 img,
+.object10 img,
+.object11 img,
+.object12 img,
+.object13 img,
+.object14 img,
+.object15 img,
+.object16 img,
+.object17 img,
+.object18 img,
+.object19 img,
+.object20 img,
+.object21 img,
+.object22 img,
+.object23 img,
+.object24 img,
+.object25 img,
+.object26 img,
+.object27 img,
+.object28 img,
+.object29 img {
+  display: block;
+  width: 35px;
+  height: auto;
+  filter: drop-shadow(0 0 5px #57e185);
+  transition: transform 0.3s ease-in-out;
+}
+
+.object1 img:hover,
+.object2 img:hover,
+.object3 img:hover,
+.object4 img:hover,
+.object5 img:hover,
+.object6 img:hover,
+.object7 img:hover,
+.object8 img:hover,
+.object9 img:hover,
+.object10 img:hover,
+.object11 img:hover,
+.object12 img:hover,
+.object13 img:hover,
+.object14 img:hover,
+.object15 img:hover,
+.object16 img:hover,
+.object17 img:hover,
+.object18 img:hover,
+.object19 img:hover,
+.object20 img:hover,
+.object21 img:hover,
+.object22 img:hover,
+.object23 img:hover,
+.object24 img:hover,
+.object25 img:hover,
+.object26 img:hover,
+.object27 img:hover,
+.object28 img:hover,
+.object29 img:hover {
+  transform: scale(5);
+}
