@@ -55,9 +55,6 @@ h2 {
 }
 
 /*Bar*/ 
-.map {
-  filter:invert(48%) sepia(79%) saturate(3000%) hue-rotate(170deg) brightness(45%) contrast(140%);
-}
 
 /*Bar*/ 
 
