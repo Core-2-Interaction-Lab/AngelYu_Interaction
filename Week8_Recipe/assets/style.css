@@ -1,0 +1,64 @@
+html {
+    margin: 2em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(35, 19, 9);
+    background-image: rgb(227, 202, 14);
+    font-size: 20px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+article {
+    margin: auto;
+    flex-direction: row;
+    background-color: rgb(255, 255, 226);
+    border-radius: 10px;
+    border-style: solid 1px rgb(48, 35, 18);
+}
+
+h1 {
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: left;
+}
+
+p {
+    text-align: left;
+    font-weight: light;
+    margin: 1%;
+}
+
+img {
+    width:100%;
+    border-radius: 10px;
+    margin: 1%;
+}
+
+.ingredients,
+.instructions {
+    text-align: left;
+    font-weight: light;
+    margin: 1%;
+    border-left: solid 1px rgb(48,35,18)
+}
+
+li {
+    color: rgb(35, 19, 9);
+    font-size: 20px;
+}
+
+li:hover {
+    color: black;
+    font-size: 23px;
+    transition: 2s ease-in-out;
+}

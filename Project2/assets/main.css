@@ -395,7 +395,7 @@ button a:hover {
 }
 
 #collection-list li img {
-  max-width: 340px;
+  max-width: 100%;
   margin: 2% 9%;
 }
  
