@@ -22,7 +22,7 @@
         </div>
       </article>
       <article>
-        <img class="map" src="assets\photos\new-map.svg" />
+        <img id="map" src="assets\photos\new-map.svg" />
         <div class="row">
           <div class="column">
             <div class="object1" button onclick="scrollTo()">
@@ -146,9 +146,9 @@
       </article>
       <article>
         <div class="bar2">
-          <button class="all">TOGGLE ALL</button>
-          <button class="gallery">GALLERY VIEW</button>
-          <button type="random">RANDOM</button>
+          <button id="toggle-overflow">TOGGLE ALL</button>
+          <button onclick="toggleVisibility()">TOGGLE IMG</button>
+          <button id="toggleThemeBtn">THEME</button>
         </div>
       </article>
       <article>

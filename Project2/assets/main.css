@@ -4,7 +4,27 @@ html {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+:root {
+  --bg-color: #05386B;
+  --text-color: #EDF5E1;
+  --accent-color: #5CDB95;
+  --my-svg-fill: #5CDB95;
+}
+svg path {
+  fill: var(--my-svg-fill);
+}
+
 body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+button {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+body {    
   margin: 0;
 }
 
@@ -16,16 +36,19 @@ section {
 
 article {
   position: relative;
+  
 }
 
 article:nth-of-type(2) {
-  background-color: #5CDB95;
+  background-color: var(--accent-color); 
+  box-shadow: 4px 7px 7px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   margin: 1%;
 }
 
 article:nth-of-type(4) {
-  background-color: #05386B;
+  background-color: var(--bg-color);
+  box-shadow: 4px 7px 7px rgba(0, 0, 0, 0.3);
 }
 
 img {
@@ -35,7 +58,6 @@ img {
   margin: 1em auto;
   ;
 }
-
 
 a {
   text-decoration: none;
@@ -56,33 +78,32 @@ h2 {
 
 /*Bar*/
 
-/*Bar*/
-
 .bar {
   position: relative;
   bottom: 0;
   margin: AUTO;
   padding: 0.5%;
   text-align: center;
-  background-color: #05386B;
+  background-color: var(--bg-color);
 }
 
 .bar2 {
   position: relative;
-  top: 10px;
+  top: 7px;
   padding: .7em;
   text-align: center;
-  background-color: #05386B;
+  background-color: var(--bg-color);
 }
 
 /*Button*/
 
 button {
-  background-color: #05386B;
+  background-color: var(--bg-color);
   border: none;
-  color: #EDF5E1;
+  color: var(--text-color);
   border-style: solid;
-  border-color: #EDF5E1;
+  border-color: var(--text-color);
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
   margin: 0em 0.5em;
   padding: 10px 20px;
   text-align: center;
@@ -96,17 +117,17 @@ button {
 }
 
 button:hover {
-  background-color: #EDF5E1;
-  color: #05386B;
+  background-color: var(--text-color);
+  color: var(--bg-color);
 }
 
 button a {
-  color: #EDF5E1;
+  color: var(--text-color);
   text-decoration: none;
 }
 
 button a:hover {
-  color: #05386B;
+  color: var(--bg-color);
   text-decoration: none;
 }
 
@@ -370,7 +391,7 @@ button a:hover {
   padding: 50px;
 
   font-family: 'Josefin Sans', sans-serif;
-  color: #05386B;
+  color: var(--bg-color);
   font-size: 200%;
   font-weight: 500;
   line-height: 160%;
@@ -379,7 +400,8 @@ button a:hover {
   overflow-y: scroll;
   height: 400px;
 
-  background-color: #5CDB95;
+  background-color: var(--accent-color);
+  box-shadow: 3px 6px 7px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
 }
 
@@ -392,10 +414,23 @@ button a:hover {
 
   font-size: 80%;
   border-radius: 20px;
-  background-color: #EDF5E1;
+  background-color: var(--text-color); 
+  box-shadow: 3px 6px 7px rgba(0, 0, 0, 0.3);
 
   max-height: 500px;
 }
+
+#collection-list li img {
+}
+
+#collection-list li p {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
 
 /*Media Responsive*/
 @media (max-width:1800px) {
@@ -409,7 +444,8 @@ button a:hover {
 
   #collection-list li {
     margin: 3px;
-    width: 49%;
+    width: 46%;
+    height: 550px;
   }
 
   #collection-list li img {
@@ -420,9 +456,9 @@ button a:hover {
   #collection-list li p {
     font-size: 90%;
     line-height: 180%;
-    margin: 5px 1em 5px 0;
+    margin: 1em;
   }
-}
+} 
 
 @media (max-width:1200px) {
   #collection-list {
@@ -448,7 +484,8 @@ button a:hover {
   #collection-list li p {
     font-size: 70%;
     line-height: 180%;
-    margin: 0;
+    margin: 1em;
+    display: block;
   }
 }
 
@@ -476,7 +513,7 @@ button a:hover {
   #collection-list li p {
     font-size: 55%;
     line-height: 160%;
-    margin: 0;
+    margin: 1em;
   }
 }
 
@@ -486,6 +523,10 @@ button a:hover {
     display: none;
   }
 
+  h1 {
+    font-size: 60px;
+    margin: 0.5em;
+  }
   .map {
     display: none;
   }
@@ -514,5 +555,9 @@ button a:hover {
     font-size: 55%;
     line-height: 160%;
     margin: 0;
+  }
+
+  #toggle-overflow {
+    display: none;
   }
 }
