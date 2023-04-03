@@ -6,6 +6,7 @@ fetch('collection.json')
 
     data.forEach(item => {
       const listItem = document.createElement('li');
+      listItem.id = item.id;
       const itemInfo = `
         <p>
           Name: ${item.name} (${item.year}) <br>

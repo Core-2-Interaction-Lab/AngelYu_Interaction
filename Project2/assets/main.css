@@ -22,7 +22,7 @@ article:nth-of-type(2) {
   background-color: #5CDB95;
   border-radius: 20px;
   margin: 1%;
-} 
+}
 
 article:nth-of-type(4) {
   background-color: #05386B;
@@ -54,9 +54,9 @@ h2 {
   margin: 0;
 }
 
-/*Bar*/ 
+/*Bar*/
 
-/*Bar*/ 
+/*Bar*/
 
 .bar {
   position: relative;
@@ -81,7 +81,7 @@ button {
   background-color: #05386B;
   border: none;
   color: #EDF5E1;
-  border-style: solid ;
+  border-style: solid;
   border-color: #EDF5E1;
   margin: 0em 0.5em;
   padding: 10px 20px;
@@ -359,7 +359,7 @@ button a:hover {
   transform: scale(5);
   filter: grayscale(0)
 }
-  
+
 
 /* collection */
 #collection-list {
@@ -389,16 +389,130 @@ button a:hover {
   flex-direction: row;
   align-items: center;
   margin: 1%;
-  
+
+  font-size: 80%;
   border-radius: 20px;
   background-color: #EDF5E1;
+
+  max-height: 500px;
 }
 
-#collection-list li img {
-  max-width: 100%;
-  margin: 2% 9%;
+/*Media Responsive*/
+@media (max-width:1800px) {
+  #collection-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 10px;
+    height: 600px;
+  }
+
+  #collection-list li {
+    margin: 3px;
+    width: 49%;
+  }
+
+  #collection-list li img {
+    max-width: 30%;
+    margin: 2% 6%;
+  }
+
+  #collection-list li p {
+    font-size: 90%;
+    line-height: 180%;
+    margin: 5px 1em 5px 0;
+  }
 }
- 
-#collection-list li p {
-  margin: 0;
+
+@media (max-width:1200px) {
+  #collection-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding: 10px;
+    height: 800px;
+
+  }
+
+  #collection-list li {
+    margin: 3px;
+    width: 49%;
+  }
+
+  #collection-list li img {
+    max-width: 30%;
+    margin: 2% 6%;
+  }
+
+  #collection-list li p {
+    font-size: 70%;
+    line-height: 180%;
+    margin: 0;
+  }
+}
+
+
+@media (max-width:900px) {
+  #collection-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding: 10px;
+    height: 920px;
+  }
+
+  #collection-list li {
+    margin: 3px;
+    width: 49%
+  }
+
+  #collection-list li img {
+    max-width: 30%;
+    margin: 2% 6%;
+  }
+
+  #collection-list li p {
+    font-size: 55%;
+    line-height: 160%;
+    margin: 0;
+  }
+}
+
+@media (max-width:700px) {
+
+  article:nth-of-type(2) {
+    display: none;
+  }
+
+  .map {
+    display: none;
+  }
+
+  #collection-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding: 10px;
+    height: 920px;
+  }
+
+  #collection-list li {
+    margin: 3px;
+    width: 100%;
+    max-height: 18%;
+  }
+
+  #collection-list li img {
+    max-width: 25%;
+    margin: 2% 6%;
+  }
+
+  #collection-list li p {
+    font-size: 55%;
+    line-height: 160%;
+    margin: 0;
+  }
 }
