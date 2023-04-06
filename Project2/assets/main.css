@@ -8,10 +8,11 @@ html {
   --bg-color: #05386B;
   --text-color: #EDF5E1;
   --accent-color: #5CDB95;
-  --my-svg-fill: #5CDB95;
 }
-svg path {
-  fill: var(--my-svg-fill);
+
+#svg-map {
+  fill: var(--text-color);  
+  margin: 2em auto;
 }
 
 body {
@@ -381,6 +382,69 @@ button a:hover {
   filter: grayscale(0)
 }
 
+.object1 span,
+.object2 span,
+.object3 span,
+.object4 span,
+.object5 span,
+.object6 span,
+.object7 span,
+.object8 span,
+.object9 span,
+.object10 span,
+.object11 span,
+.object12 span,
+.object13 span,
+.object14 span,
+.object15 span,
+.object16 span,
+.object17 span,
+.object18 span,
+.object19 span,
+.object20 span,
+.object21 span,
+.object22 span,
+.object23 span,
+.object24 span,
+.object25 span,
+.object26 span,
+.object27 span,
+.object28 span,
+.object29 span {
+  display: none;
+}
+
+.object1 span:hover,
+.object2 span:hover,
+.object3 span:hover,
+.object4 span:hover,
+.object5 span:hover,
+.object6 span:hover,
+.object7 span:hover,
+.object8 span:hover,
+.object9 span:hover,
+.object10 span:hover,
+.object11 span:hover,
+.object12 span:hover,
+.object13 span:hover,
+.object14 span:hover,
+.object15 span:hover,
+.object16 span:hover,
+.object17 span:hover,
+.object18 span:hover,
+.object19 span:hover,
+.object20 span:hover,
+.object21 span:hover,
+.object22 span:hover,
+.object23 span:hover,
+.object24 span:hover,
+.object25 span:hover,
+.object26 span:hover,
+.object27 span:hover,
+.object28 span:hover,
+.object29 span:hover {
+  display: block;
+}
 
 /* collection */
 #collection-list {
@@ -474,6 +538,7 @@ button a:hover {
   #collection-list li {
     margin: 3px;
     width: 49%;
+    height: auto;
   }
 
   #collection-list li img {
