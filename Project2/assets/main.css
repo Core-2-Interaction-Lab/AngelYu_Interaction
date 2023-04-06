@@ -390,8 +390,8 @@ button a:hover {
 
 .image-text {
   position: fixed;
-  bottom: 50px;
-  right: 180px;
+  top: 75%;
+  right: 20%;
   color: var(--bg-color);
   font-size: 70px;
   background-color: var(--text-color);
