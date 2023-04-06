@@ -77,6 +77,11 @@ h2 {
   margin: 0;
 }
 
+.text {
+  margin: 1em 4em;
+  font-weight: 400;
+}
+
 /*Bar*/
 
 .bar {
@@ -307,6 +312,7 @@ button a:hover {
 .object27,
 .object28,
 .object29 {
+  display: inline-block;
   position: absolute;
   transition: transform 0.3s ease-in-out;
 }
@@ -382,68 +388,50 @@ button a:hover {
   filter: grayscale(0)
 }
 
-.object1 span,
-.object2 span,
-.object3 span,
-.object4 span,
-.object5 span,
-.object6 span,
-.object7 span,
-.object8 span,
-.object9 span,
-.object10 span,
-.object11 span,
-.object12 span,
-.object13 span,
-.object14 span,
-.object15 span,
-.object16 span,
-.object17 span,
-.object18 span,
-.object19 span,
-.object20 span,
-.object21 span,
-.object22 span,
-.object23 span,
-.object24 span,
-.object25 span,
-.object26 span,
-.object27 span,
-.object28 span,
-.object29 span {
-  display: none;
+.image-text {
+  position: fixed;
+  bottom: 50px;
+  right: 180px;
+  color: var(--bg-color);
+  font-size: 70px;
+  background-color: var(--text-color);
+  text-align: center;
+  opacity: 0;
+  z-index: 7;
+  transition: opacity 0.2s ease-in-out;
 }
 
-.object1 span:hover,
-.object2 span:hover,
-.object3 span:hover,
-.object4 span:hover,
-.object5 span:hover,
-.object6 span:hover,
-.object7 span:hover,
-.object8 span:hover,
-.object9 span:hover,
-.object10 span:hover,
-.object11 span:hover,
-.object12 span:hover,
-.object13 span:hover,
-.object14 span:hover,
-.object15 span:hover,
-.object16 span:hover,
-.object17 span:hover,
-.object18 span:hover,
-.object19 span:hover,
-.object20 span:hover,
-.object21 span:hover,
-.object22 span:hover,
-.object23 span:hover,
-.object24 span:hover,
-.object25 span:hover,
-.object26 span:hover,
-.object27 span:hover,
-.object28 span:hover,
-.object29 span:hover {
-  display: block;
+
+.object1:hover .image-text,
+.object2:hover .image-text,
+.object3:hover .image-text,
+.object4:hover .image-text,
+.object5:hover .image-text,
+.object6:hover .image-text,
+.object7:hover .image-text,
+.object8:hover .image-text,
+.object9:hover .image-text,
+.object10:hover .image-text,
+.object11:hover .image-text,
+.object12:hover .image-text,
+.object13:hover .image-text,
+.object14:hover .image-text,
+.object15:hover .image-text,
+.object16:hover .image-text,
+.object17:hover .image-text,
+.object18:hover .image-text,
+.object19:hover .image-text,
+.object20:hover .image-text,
+.object21:hover .image-text,
+.object22:hover .image-text,
+.object23:hover .image-text,
+.object24:hover .image-text,
+.object25:hover .image-text,
+.object26:hover .image-text,
+.object27:hover .image-text,
+.object28:hover .image-text,
+.object29:hover .image-text{
+  opacity: 1;
 }
 
 /* collection */
