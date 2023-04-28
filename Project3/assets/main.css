@@ -1,0 +1,127 @@
+html {
+  background-color: #2F8BA6;
+  color: #EDF5E1;
+}
+
+body {
+  margin: 0;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  text-align: center;
+}
+
+/** Section 1 **/
+.bar1 {
+  width: 100%;
+  margin: 1em 0 0 0;
+  border-bottom: solid 5px #F89E11;
+}
+
+.logo {
+  margin: 0em 1em 0.5em;
+  width: 7%;
+}
+
+.dna {
+  width: 100%;
+  max-height: 550px;
+  filter: blur(2px);
+  object-fit: cover;
+}
+
+.chat {
+  background-color: rgb(47, 139, 166, 56%);
+  position: absolute;
+  top: 100px;
+
+  margin: 2em 7em;
+  padding: 3em;
+  border-radius: 3em;
+
+  font-size: 20px;
+  text-align: center;
+  line-height: 25px;
+  z-index: 2;
+}
+
+.semi1 {
+  position: absolute;
+  top: 20%;
+
+  height: 30px;
+  width: 60px;
+  border-radius: 150px 150px 0 0;
+  background-color: #F89E11;
+
+  z-index: 1;
+}
+
+.semi2 {
+  position: absolute;
+  top: 63.5%;
+
+  height: 30px;
+  width: 60px;
+  border-radius: 0 0 150px 150px;
+  background-color: #F89E11;
+
+  z-index: 1;
+}
+
+
+/** Section 2 **/
+.circle1 {
+  position: relative;
+  margin: 2.5em;
+
+  height: 40px;
+  width: 40px;
+  border-radius: 150px;
+  background-color: #F89E11;
+
+  z-index: 1;
+  animation: constant 1.5s ease infinite alternate;
+}
+
+@keyframes constant {
+0%   {top:-10px;}
+100% {top:70px;}
+}
+
+.circle2 {
+  position: relative;  
+  margin: 3em 0 6em;
+  height: 80px;
+  width: 80px;
+  border-radius: 150px;
+  background-color: #F89E11;
+
+  animation: constant 1.5s ease infinite alternate;
+}
+
+.circle3 {
+  position: relative;  
+  margin: 2em;
+
+  height: 130px;
+  width: 130px;
+  border-radius: 150px;
+  background-color: #F89E11;
+}
+
