@@ -40,15 +40,15 @@
           <h2>2007</h2>
           <h2>2019</h2>
         </div>
-        <div class="fact">
-          <p>
-            There are <b>6</b> different subcategories of diseases and <b>11</b> recorded
-            diseases recorded in New York City.
-          </p>
-        </div>
         <div class="circle1"></div>
       </article>
-      <article>
+      <article class="block">        
+        <div class="fact">
+        <p>
+          There are <b>6</b> different subcategories of diseases and <b>11</b> recorded
+          diseases recorded in New York City.
+        </p>
+      </div>
         <!-- Graph goes here-->
         <ul class="diseases">
           <li class="disease-header">Neurological Diseases</li>
@@ -81,14 +81,14 @@
           <li><span class="circle blue"></span>Chronic Liver Disease</li>
           <li><span class="circle blue"></span>Cirrhosis</li>
         </ul>
-        <div class="circle2"></div>
       </article>
+      <div class="circle2"></div>
       <article>
-        <h3>533,306</h2> 
-        <h3>diagnosed</h2>
+        <div id="count">533,306</div> 
+        <h3>diagnosed</h3>
           <div class="circle1"></div>
         <div class="fact">
-            <p> Out of the 533,306 people diagnosed, 280,527 were female. That estimates to about <b>52.6%</b> of diagnosed patients were female!</p>
+            <p> Out of the 533,306 people diagnosed, 280,527 were female. That estimates to about <span class="fifty">52.6%</span> of diagnosed patients were female!</p>
         </div>
         <!-- Gender pi chart goes here-->
         <div class="chart">
@@ -102,14 +102,48 @@
           </div>
         </div>
         <div class="circle1"></div>
+      </article>
+      <article class="block">        
+      <div class="fact">
+          <p> The prevalence of diseases in New York City was disproportionately higher among the white population compared to other racial and ethnic groups.</p>
+      </div>
+        <!-- Bar Graph goes here-->
+        <div class="bar white">
+          <div class="label">White / Caucasian</div>
+          <div class="value">324,927</div>
+        </div>
+        
+        <div class="bar black">
+          <div class="label">Black</div>
+          <div class="value">183,378</div>
+        </div>
+        
+        <div class="bar hispanic">
+          <div class="label">Hispanic</div>
+          <div class="value">128,287</div>
+        </div>
+        
+        <div class="bar asian">
+          <div class="label">Asian</div>
+          <div class="value">48,462</div>
+        </div>
+        
+        <div class="bar other">
+          <div class="label">Other</div>
+          <div class="value">3,121</div>
+        </div>
+        
+        <div class="bar unknown">
+          <div class="label">Not Stated / Unknown</div>
+          <div class="value">9,182</div>
+        </div>
+      </article>
+      <article>
+        <div class="circle1"></div>
         <div class="circle2"></div>
       </article>
-      <article>        
-      <div class="chat1">
-        <p> Heart disease is the leading cause of death in the United States. It includes conditions such as coronary artery disease and heart failures.</p>
-      </div>
-        <!-- Word cloud goes here-->
-      </article>
     </section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+    <script src="script.js"></script>
   </body>
 </html>

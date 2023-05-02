@@ -27,6 +27,14 @@ p {
   text-align: center;
 }
 
+.block {
+  position: relative;
+  padding: 3em 0;
+
+  color: #2F8BA6;
+  background-color: #EDF5E1;
+}
+
 /** Section 1 **/
 .bar1 {
   width: 100%;
@@ -112,6 +120,7 @@ p {
   width: 80px;
   border-radius: 150px;
   background-color: #F89E11;
+  align-self: center;
 
   animation: constant 1.5s ease infinite alternate;
 }
@@ -141,7 +150,7 @@ h2 {
 /** Graph **/
 ul.diseases {
   position: relative;
-  background-color: rgba(194, 194, 194, 0.5);
+  background-color: #2f8aa6b0;
   font-weight: 600;
   letter-spacing: 1px;
   border-radius: 30px;
@@ -151,20 +160,21 @@ ul.diseases {
 }
 
 ul.diseases li {
-  position: relative;
-  background-color: white;
-  color: #5ACAE3;
-  border-radius: 30px;
   margin: 20px;
   padding: 15px;
+  position: relative;
+  background-color: #EDF5E1;
+  color: #2F8BA6;
+  border-radius: 30px;
+  font-size: 17px;
   list-style: none;
   text-align: center;
 }
 
 ul.diseases li.disease-header {
   margin: 10px;
-  color: white;
-  font-size: 23px;
+  color: #EDF5E1;
+  font-size: 28px;
   background-color: transparent; 
 }
 
@@ -176,7 +186,7 @@ ul.diseases li.disease-header {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #2F8BA6;
+  background-color: #5ACAE3;
 }
 
 /* orange circle */
@@ -188,10 +198,11 @@ ul.diseases:before {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  background-color: orange;
+  background-color: #F89E11;
 }
 
 /** Section 3 **/
+
 h3 { 
   margin: 0;
   font-size: 200px;
@@ -199,16 +210,24 @@ h3 {
   text-align: center;
 }
 
-h3:first-of-type {
-  font-size: 310px
+#count {
+  margin: 0;
+  font-size: 310px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.fifty {
+  font-size: 100px;
+  font-weight: 700;
 }
 
 /* Pi Chart */
 .chart {
   position: relative;
   margin-bottom: 50px;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   background: #F89E11;
 }
@@ -221,16 +240,23 @@ h3:first-of-type {
 }
 
 .female {
-  clip: rect(0, 200px, 400px, 0);
+  clip: rect(0, 150px, 300px, 0);
   background: #F89E11;
-  transform: rotate(0.526turn);
+  transform: rotate(0.5turn);
 }
 
 .male {
-  clip: rect(0, 200px, 400px, 0);
+  clip: rect(0, 150px, 300px, 0);
   background: #5ACAE3;
-  transform: rotate(-0.474turn);
+  transform: rotate(-0.50turn);
+  animation: rotate 3s ease-in-out infinite;
 }
+
+@keyframes rotate {
+0%   {transform: rotate(-0.50turn);}
+100% {transform: rotate(0.50turn);}
+}
+
 
 .key {
   position: absolute;
@@ -239,7 +265,7 @@ h3:first-of-type {
   margin-bottom: 5px;
 
   bottom: 30px;
-  left: 300px;
+  left: 250px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -277,4 +303,85 @@ h3:first-of-type {
   font-size: 20px;
   text-align: center;
   line-height: 25px;
+}
+
+/* Back to Top Button */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 50%;
+  right: 25px;
+  width: 30px;
+  height: 30px;
+
+  background-color: orange;
+  border-radius: 50%;
+  border: none;
+  text-align: center;
+  font-size: 20px;
+  color: #EDF5E1;
+  z-index: 9;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background-color: #EDF5E1;
+  color: #F89E11;
+  border: solid 2.5px #F89E11;
+}
+
+/* Bar Graph */
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  align-items: center;
+  font-weight: bold;
+}
+
+.label {
+  margin: 5px;
+  flex-grow: 2px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.value {
+  display: inline-block;
+  padding: 20px;
+  background-color: #F89E11;
+  color: #EDF5E1;
+  text-align: center;
+  border-radius: 40px;
+  animation: expand 4s ease-in-out infinite;
+}
+
+.white .value {
+  width: calc(324927 / 1000 * 5%);
+}
+
+.hispanic .value {
+  width: calc(128287 / 1000 * 5%);
+}
+
+.black .value {
+  width: calc(183378 / 1000 * 5%);
+}
+
+.asian .value {
+  width: calc(48462 / 1000 * 5%);
+}
+
+.other .value {
+  width: calc(3121 / 1000 * 5%);
+}
+
+.unknown .value {
+  width: calc(9182 / 1000 * 5%);
+}
+
+@keyframes expand {
+  from { width: 0 }
+  to { width: calc();}
 }
