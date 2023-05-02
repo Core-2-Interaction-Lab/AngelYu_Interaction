@@ -109,12 +109,17 @@ p {
 }
 
 @keyframes constant {
-0%   {top:-10px;}
-100% {top:70px;}
+  0% {
+    top: -10px;
+  }
+
+  100% {
+    top: 70px;
+  }
 }
 
 .circle2 {
-  position: relative;  
+  position: relative;
   margin: 3em 0 6em;
   height: 80px;
   width: 80px;
@@ -126,7 +131,7 @@ p {
 }
 
 .circle3 {
-  position: relative;  
+  position: relative;
   margin: 2em;
 
   height: 130px;
@@ -156,7 +161,7 @@ ul.diseases {
   border-radius: 30px;
   padding: 10px;
   margin-bottom: 20px;
-  text-align: center; 
+  text-align: center;
 }
 
 ul.diseases li {
@@ -175,13 +180,13 @@ ul.diseases li.disease-header {
   margin: 10px;
   color: #EDF5E1;
   font-size: 28px;
-  background-color: transparent; 
+  background-color: transparent;
 }
 
 /* blue circle */
 .circle.blue {
   position: absolute;
-  top: -10px; 
+  top: -10px;
   left: calc(50% - 10px);
   width: 20px;
   height: 20px;
@@ -193,8 +198,8 @@ ul.diseases li.disease-header {
 ul.diseases:before {
   content: '';
   position: absolute;
-  top: -15px; 
-  left: calc(50% - 17px); 
+  top: -15px;
+  left: calc(50% - 17px);
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -203,7 +208,7 @@ ul.diseases:before {
 
 /** Section 3 **/
 
-h3 { 
+h3 {
   margin: 0;
   font-size: 200px;
   font-weight: 600;
@@ -253,8 +258,13 @@ h3 {
 }
 
 @keyframes rotate {
-0%   {transform: rotate(-0.50turn);}
-100% {transform: rotate(0.50turn);}
+  0% {
+    transform: rotate(-0.50turn);
+  }
+
+  100% {
+    transform: rotate(0.50turn);
+  }
 }
 
 
@@ -311,14 +321,15 @@ h3 {
   position: fixed;
   bottom: 50%;
   right: 25px;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
 
   background-color: orange;
   border-radius: 50%;
   border: none;
   text-align: center;
   font-size: 20px;
+  font-weight: bolder;
   color: #EDF5E1;
   z-index: 9;
   cursor: pointer;
@@ -327,7 +338,7 @@ h3 {
 #myBtn:hover {
   background-color: #EDF5E1;
   color: #F89E11;
-  border: solid 2.5px #F89E11;
+  border: solid 3px #F89E11;
 }
 
 /* Bar Graph */
@@ -382,6 +393,21 @@ h3 {
 }
 
 @keyframes expand {
-  from { width: 0 }
-  to { width: calc();}
+  from {
+    width: 0
+  }
+
+  to {
+    width: calc();
+  }
+}
+
+/** Death **/
+.gradient {
+  background-image: linear-gradient(rgba(255, 0, 0, 0), rgb(158, 2, 11));
+}
+
+.death {
+  background-color: #9E020B;
+  color: #1E1E1E;
 }
