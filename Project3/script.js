@@ -16,7 +16,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-//Counting Up
+//Counting Up Diagnosed
 function animateCount(obj, start, end, duration) {
     let startTimestamp = null;
     const step = (timestamp) => {
@@ -47,5 +47,7 @@ function animateCount(obj, start, end, duration) {
 
   window.addEventListener("scroll", animateCountOnScroll);
 });
+
+//Counting Up Deaths
 
 //Add AutoScroller button

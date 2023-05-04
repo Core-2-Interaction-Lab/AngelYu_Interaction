@@ -402,12 +402,26 @@ h3 {
   }
 }
 
+.fact2 p {
+  margin: 4em 7em 2em;
+  font-size: 20px;
+}
+
 /** Death **/
 .gradient {
   background-image: linear-gradient(rgba(255, 0, 0, 0), rgb(158, 2, 11));
+  width: auto;
+  height: 1000px;
 }
 
 .death {
   background-color: #9E020B;
   color: #1E1E1E;
+}
+
+#counte {
+  margin: 0;
+  font-size: 310px;
+  font-weight: 600;
+  text-align: center;
 }
