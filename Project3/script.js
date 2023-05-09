@@ -257,14 +257,15 @@ fetch("collection.json")
               "#011FFD",
               "#FF2281",
               "#E8E500",
+              "#00FECA",
               "#02B8A2",
               "#00207F",
               "#FF8B8B",
               "#01FFC3",
               "#F21A1D",
-              "#7FFF00",
-              
             ],
+
+            borderColor: "#ddd",
           },
         ],
         labels: pieData.map((d) => d.label),
@@ -273,11 +274,7 @@ fetch("collection.json")
         responsive: true,
         legend: {
           position: "right",
-          fontColor: '#1e1e1e',
-          fontFamily: 'Lato',
-          boxWidth: 15,
-          padding: 25
-        }
+        },
       },
     });
   });
