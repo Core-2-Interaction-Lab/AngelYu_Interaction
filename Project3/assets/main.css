@@ -341,6 +341,31 @@ h3 {
   border: solid 3px #F89E11;
 }
 
+#scrollbtn {
+  display: none;
+  position: fixed;
+  bottom: 48%;
+  right: 25px;
+  width: 35px;
+  height: 35px;
+
+  background-color: orange;
+  border-radius: 50%;
+  border: none;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #EDF5E1;
+  z-index: 9;
+  cursor: pointer;
+}
+
+#scrollbtn:hover {
+  background-color: #EDF5E1;
+  color: #F89E11;
+  border: solid 3px #F89E11;
+}
+
 /* Bar Graph */
 
 .bar {
@@ -369,27 +394,27 @@ h3 {
 }
 
 .white .value {
-  width: calc(324927 / 1000 * 5%);
+  width: calc(324927 / 1000 * 2.2%);
 }
 
 .hispanic .value {
-  width: calc(128287 / 1000 * 5%);
+  width: calc(128287 / 1000 * 4%);
 }
 
 .black .value {
-  width: calc(183378 / 1000 * 5%);
+  width: calc(183378 / 1000 * 4%);
 }
 
 .asian .value {
-  width: calc(48462 / 1000 * 5%);
+  width: calc(48462 / 1000 * 2%);
 }
 
 .other .value {
-  width: calc(3121 / 1000 * 5%);
+  width: calc(3121 / 1000 * 2.2%);
 }
 
 .unknown .value {
-  width: calc(9182 / 1000 * 5%);
+  width: calc(9182 / 1000 * 2.2%);
 }
 
 @keyframes expand {
@@ -419,9 +444,86 @@ h3 {
   color: #1E1E1E;
 }
 
+.death ul.diseases {
+  position: relative;
+  background-color: #1e1e1e81;
+}
+
 #counte {
   margin: 0;
   font-size: 310px;
   font-weight: 600;
   text-align: center;
 }
+ 
+.circle4 {
+  position: relative;
+  margin: 3em 0 6em;
+  height: 80px;
+  width: 80px;
+  border-radius: 150px;
+  background-color: #049c50;
+  align-self: center;
+
+  animation: constant 1.5s ease infinite alternate;
+}
+
+.circle5 {
+  position: relative;
+  margin: 2.5em;
+
+  height: 40px;
+  width: 40px;
+  border-radius: 150px;
+  background-color: #049c50;
+
+  z-index: 1;
+  animation: constant 1.5s ease infinite alternate;
+}
+
+/**container**/
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #9E020B;
+  color: #ddd;
+}
+
+th,
+td {
+  text-align: left;
+  margin: 1em;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  font-family: 'Lato', sans-serif;
+}
+
+th {
+  background-color: #1E1E1E;
+  color: #ddd;
+}
+
+tr:hover {
+  background-color: #b6060e;
+}
+
+tr:nth-child(even) {
+  background-color: #700000;
+}
+
+label {
+  margin-left: 10px;
+  font-size: 20px;
+  color: #ccc
+}
+
+select {
+  padding: 5px;
+  font-size: 16px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  margin-left: 10px;
+}
+
