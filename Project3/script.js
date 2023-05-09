@@ -164,40 +164,44 @@ fetch('collection.json')
 ;
 
 // Get data from collection.json
-fetch('collection.json')
-  .then(response => response.json())
-  .then(data => {
-    // Prepare data for chart.js
-    let years = [];
-    let deathCounts = [];
-    data.forEach(item => {
-      years.push(item.Year);
-      deathCounts.push(item.Deaths);
-    });
+    fetch('collection.json')
+    .then(response => response.json())
+    .then(data => {
+      // Group the data by year
+      const groupedData = data.reduce((acc, curr) => {
+        if (!acc[curr.Year]) {
+          acc[curr.Year] = 0;
+        }
+        acc[curr.Year] += curr.Deaths;
+        return acc;
+      }, {});
 
-    // Create the bar chart
-    let ctx = document.getElementById('myChart').getContext('2d');
-    let myChart = new Chart(ctx, {
+      // Extract the years and death counts from the grouped data
+      const years = Object.keys(groupedData).map(year => parseInt(year));
+      const deathCounts = Object.values(groupedData);
+
+      // Create the bar chart
+      const ctx = document.getElementById('myChart').getContext('2d');
+      const myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: years,
-            datasets: [{
-                label: 'Number of deaths',
-                data: deathCounts,
-                backgroundColor: '#1E1E1E',
-                borderColor: '#1E1E1E',
-                borderWidth: 1
-            }]
+          labels: years,
+          datasets: [{
+            label: 'Number of Deaths',
+            data: deathCounts,
+            backgroundColor: '#1E1E1E',
+            borderColor: '#1E1E1E',
+            borderWidth: 1
+          }]
         },
         options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero: true
-                    }
-                }]
-            }
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: true
+              }
+            }]
+          }
         }
+      });
     });
-  })
-  .catch(error => console.error(error));
