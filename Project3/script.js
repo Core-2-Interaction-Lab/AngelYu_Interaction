@@ -187,18 +187,22 @@ fetch('collection.json')
         data: {
           labels: years,
           datasets: [{
-            label: 'Number of Deaths',
+            label: '',
             data: deathCounts,
-            backgroundColor: '#1E1E1E',
-            borderColor: '#1E1E1E',
+            backgroundColor: '#ddd',
+            borderColor: '#ddd',
             borderWidth: 1
           }]
-        },
-        options: {
+        },options: {
           scales: {
             yAxes: [{
               ticks: {
-                beginAtZero: true
+                fontColor: "#ddd"
+              }
+            }],
+            xAxes: [{
+              ticks: {
+                fontColor: "#ddd"
               }
             }]
           }

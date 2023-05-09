@@ -462,7 +462,7 @@ h3 {
   height: 80px;
   width: 80px;
   border-radius: 150px;
-  background-color: #049c50;
+  background-color: #ddd;
   align-self: center;
 
   animation: constant 1.5s ease infinite alternate;
@@ -475,7 +475,7 @@ h3 {
   height: 40px;
   width: 40px;
   border-radius: 150px;
-  background-color: #049c50;
+  background-color: #DDD;
 
   z-index: 1;
   animation: constant 1.5s ease infinite alternate;
