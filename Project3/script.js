@@ -107,7 +107,7 @@ function animateCount(obj, start, end, duration) {
         };
       }
     });
-
+; 
     // Retrieve the JSON data
 fetch('collection.json')
 .then(response => response.json())
@@ -161,3 +161,43 @@ fetch('collection.json')
   });
 })
 .catch(error => console.error(error));
+;
+
+// Get data from collection.json
+fetch('collection.json')
+  .then(response => response.json())
+  .then(data => {
+    // Prepare data for chart.js
+    let years = [];
+    let deathCounts = [];
+    data.forEach(item => {
+      years.push(item.Year);
+      deathCounts.push(item.Deaths);
+    });
+
+    // Create the bar chart
+    let ctx = document.getElementById('myChart').getContext('2d');
+    let myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: years,
+            datasets: [{
+                label: 'Number of deaths',
+                data: deathCounts,
+                backgroundColor: '#1E1E1E',
+                borderColor: '#1E1E1E',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+  })
+  .catch(error => console.error(error));

@@ -11,6 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Project 3</title>
   </head>
   <body>
@@ -185,8 +187,12 @@
         </div>
         <div class="circle5"></div>
         <div class="circle4"></div>
-        <canvas id="deaths-chart"></canvas>
       </article>
+      
+	<div style="width: 1-00px">
+		<canvas id="myChart"></canvas>
+	</div>
+      
 
       <flow class="sort">
         <label for="sort-by">Sort by:</label>
@@ -223,7 +229,6 @@
       </table>
     </section>
     <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
-
     <script src="script.js"></script>
   </body>
 </html>
