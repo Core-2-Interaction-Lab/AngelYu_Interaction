@@ -271,9 +271,8 @@ fetch("collection.json")
         labels: pieData.map((d) => d.label), //remove this line
       },
       options: {
-        responsive: true,
         legend: {
-          position: "right",
+          display: false
         },
       },
     });
