@@ -268,7 +268,7 @@ fetch("collection.json")
             borderColor: "#ddd",
           },
         ],
-        labels: pieData.map((d) => d.label),
+        labels: pieData.map((d) => d.label), //remove this line
       },
       options: {
         responsive: true,
