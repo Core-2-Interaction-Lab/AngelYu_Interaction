@@ -7,13 +7,6 @@ body {
 	margin: 0;
 }
 
-a {
-	margin: 10em;
-	position: relative;
-	text-decoration: none;
-	color: white;
-	text-align: center;
-}
 .canvas {
 	max-width: 900px;
 	height: 550px;
@@ -21,7 +14,45 @@ a {
 	position: relative;
 
 	background-color: #4E4D48;
+	    animation: change-color 5s infinite;
+	
 }
+@keyframes change-color {
+	0% {
+	 background-color: red;
+   }
+   10% {
+	 background-color: pink;
+   }
+   20% {
+	 background-color: salmon;
+   }
+   30% {
+	 background-color: orange;
+   }
+   40% {
+	 background-color: yellow;
+   }
+   50% {
+	 background-color: greenyellow;
+   }
+   60% {
+	 background-color: green;
+   }
+   70% {
+	 background-color: blue;
+   }
+   80% {
+	 background-color: darkblue;
+   }
+   90% {
+	 background-color: violet;
+   }
+   100% {
+	 background-color: black;
+   }
+ }
+ 
 
 
 /* Table */
@@ -35,6 +66,7 @@ a {
 
 	background: linear-gradient(171.93deg, #9E9FA3 35.67%, rgba(158, 159, 163, 0));
 	transform: skew(-15deg,-11deg) rotate(10.88deg);
+	
 }
 
 /* Lamp */
@@ -46,6 +78,7 @@ a {
 	left: 432px;
 	top: 208px;
 
+	animation: constant 2s ease-in-out infinite alternate;
 	background: linear-gradient(180deg, #FFECBC 0%, #F3EFE4 49.73%);
 }
 
@@ -58,6 +91,8 @@ a {
 
 	background: linear-gradient(0deg, #C1BDB2 -8.72%, #6C695F 113.37%);
 	border-radius: 35px 35px 0px 0px;
+	animation: constante 2s ease-in-out infinite alternate;
+
 }
 
 .light {
@@ -70,8 +105,29 @@ a {
 	background: rgba(255, 229, 160, 0.50);
 	border-radius: 40px;
 	filter: blur(15px);
+	animation: blur 1s ease infinite alternate;
+
 }
 
+
+@keyframes blur {
+    from {
+        -webkit-filter: blur(10px); /* Safari */
+        filter: blur(10px);  }
+
+    to {
+        -webkit-filter: blur(40px); /* Safari */
+        filter: blur(40px);  }
+}
+
+@keyframes constante {
+	0%   {left:-140px;}
+	100% {left:560px;}
+	}
+@keyframes constant {
+	0%   {left:-100px;}
+	100% {left:600px;}
+	}
 
 /* Tape */
 
@@ -85,6 +141,8 @@ a {
 	background: #2C2B3B;
 	border-radius: 100px;
 	clip-path: inset(40px 70px);
+	animation: scale 2s ease-in-out infinite alternate;
+
 }
 
 .ring {
@@ -98,8 +156,18 @@ a {
 
 	border: 30px solid #2C2B3B;
 	border-radius: 100px;
+	animation: scale 2s ease-in-out infinite alternate;
+
 }
 
+@keyframes scale {
+	0% {
+	  transform: scale(3.0);
+	}
+	100% {
+		  transform: scale(0.3);
+	  }
+  }
 
 /* 8 Ball */
 
@@ -112,6 +180,8 @@ a {
 
 	background: radial-gradient(62.83% 62.83% at 25% 37.17%, #241d38 0%, #171323 100%);
 	border-radius: 100px;
+	animation: shape 2s ease-in-out infinite alternate;
+
 }
 
 .innerball {
@@ -123,6 +193,8 @@ a {
 
 	background: #cfcfd0;
 	border-radius: 100px;
+	animation: shape 2s ease-in-out infinite alternate;
+
 }
 
 .number {
@@ -131,4 +203,7 @@ a {
 	left: 72px;
 	top: 50px;
 }
-
+@keyframes shape {
+    from {border-radius: 0}
+    to {border-radius: 50%}
+}
